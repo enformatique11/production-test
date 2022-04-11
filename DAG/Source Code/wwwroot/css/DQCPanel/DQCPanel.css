@@ -1,0 +1,332 @@
+﻿/*
+	==========================================
+	PwC Master Stylesheet 1280/Orange
+
+	Theme: Orange
+	(Secondary colours: Red, Burgundy, Grey)
+
+	Horizontal Resolution: 1024 pixels
+	==========================================
+*/
+
+
+/* DQC Panel
+----------------------------------------------------*/
+
+.DQCPanelHeader
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #e0301e;			/* Orange */
+	width: 888px;
+	background-color: #e0301e;
+	padding: 5px 5px 5px 5px;
+	color: #fff;
+	font-size: 9pt;
+	font-family: Georgia;
+	font-weight: bold;
+	height: 18px;
+	float: left;
+}
+
+.DQCPanelHeaderEmpty
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #e0301e;			/* Orange */
+	width: 890px;
+	background-color: #fff;
+	padding: 5px 3px 5px 3px;
+	color: #000;
+	height: 18px;
+	float: left;
+}
+
+.DQCPanelItemRow0
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #e0301e;			/* Orange */
+	border-top: 0px;
+	width: 888px;
+	background-color: #fff;
+	padding: 5px 5px 2px 5px;
+	color: #000;
+	font-family: Arial;
+	font-size: 9pt;
+	height: 18px auto;
+	float: left;
+}
+
+.DQCPanelItemRow1
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #e0301e;			/* Orange */
+	border-top: 0px;
+	width: 888px;
+	background-color: #fceae9;
+	padding: 5px 5px 2px 5px;
+	color: #000;
+	font-family: Arial;
+	font-size: 9pt;
+	height: 18px auto;
+	float: left;
+}
+
+.DQCPanelItemRow0:hover
+{
+	background-color: #f7cbc7;			/* 25% Orange */
+}
+
+.DQCPanelItemRow1:hover
+{
+	background-color: #f7cbc7;			/* 25% Orange */
+}
+
+.DQCPanelItemRow0_NoHover
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #e0301e;			/* Orange */
+	border-top: 0px;
+	width: 888px;
+	background-color: #fff;
+	padding: 5px 5px 2px 5px;
+	color: #000;
+	font-family: Arial;
+	font-size: 9pt;
+	height: 18px auto;
+	float: left;
+}
+
+.DQCPanelItemRow1_NoHover
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #e0301e;			/* Orange */
+	border-top: 0px;
+	width: 888px;
+	background-color: #fceae9;
+	padding: 5px 5px 2px 5px;
+	color: #000;
+	font-family: Arial;
+	font-size: 9pt;
+	height: 18px auto;
+	float: left;
+}
+
+.DQCPanelExpandButton
+{
+	width:24px;
+	height:24px;
+	background-color:#e0301e;	
+	background-repeat:no-repeat;
+	background-image: url('../../img/expand_plus.png');
+	margin-right:10px;	
+	float:left;
+}
+
+.DQCPanelType
+{
+	width:100px;
+	padding-right:5px;
+	float:left;
+}
+
+.DQCPanelTitle
+{
+	width:250px;
+	padding-right:5px;	
+	float:left;
+}
+.DQCPanelDescription
+{
+	width:363px;
+	padding-right:5px;	
+	float:left;
+}
+.DQCPanelNumControls
+{
+	text-align:right;
+	width:100px;
+	padding-right:5px;	
+	float:left;
+}
+
+.DQCPanelControls
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-top:0px;	
+	display:none;
+	padding-bottom: 4px;
+	float: left;
+}
+
+.DQCPanelControlSectionTitle
+{
+	border-collapse: collapse;
+	border-spacing: 0;	
+	width: 883px;
+	padding: 10px 5px 5px 5px;
+	color: #000;
+	font-size: 10pt;
+	font-family: Georgia;
+	font-style: italic;
+	font-weight: bold;
+	height: 18px;	
+	float: left;
+}
+
+.DQCPanelControlHeader
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #e0301e;			/* Orange */
+	width: 868px;
+	background-color: #e0301e;
+	padding: 5px 5px 5px 5px;
+	color: #fff;
+	font-size: 8pt;
+	font-family: Georgia;
+	font-weight: bold;
+	height: 16px;
+	float: left;
+	margin-left:5px;
+}
+
+.DQCPanelControlHeaderEmpty
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #e0301e;			/* Orange */
+	width: 868px;
+	background-color: #e0301e;
+	padding: 5px 5px 5px 5px;
+	color: #fff;
+	font-size: 8pt;
+	font-family: Georgia;
+	font-weight: bold;
+	height: 16px;
+	float: left;
+	margin-left:5px;
+}
+
+.DQCPanelControlItemRow0
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #e0301e;			/* Orange */
+	border-top: 0px;
+	width: 868px;
+	background-color: #fff;
+	padding: 4px 5px 4px 5px;
+	color: #000;
+	font-family: Arial;
+	font-size: 8pt;
+	height: 18px auto;
+	float: left;
+	margin-left:5px;
+}
+
+.DQCPanelControlItemRow1
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #e0301e;			/* Orange */
+	border-top: 0px;
+	width: 868px;
+	background-color: #fceae9;
+	padding: 4px 5px 4px 5px;
+	color: #000;
+	font-family: Arial;
+	font-size: 8pt;
+	height: 18px auto;
+	float: left;
+	margin-left:5px;
+}
+
+.DQCPanelControlItemRow0:hover
+{
+	background-color: #f7cbc7;			/* 25% Orange */
+}
+
+.DQCPanelControlItemRow1:hover
+{
+	background-color: #f7cbc7;			/* 25% Orange */
+}
+
+.DQCPanelControlID
+{
+	width:30px;
+	padding-right: 5px;
+	float:left;
+}
+
+.DQCPanelControlTitle
+{
+	width:120px;
+	padding-right: 5px;
+	float:left;
+}
+
+.DQCPanelControlDescription
+{
+	width:210px;
+	padding-right: 5px;
+	float:left;
+}
+
+.DQCPanelControlMeasurement
+{
+	width:200px;
+	padding-right: 5px;
+	float:left;
+}
+
+.DQCPanelControlType
+{
+	width:90px;
+	padding-right: 5px;
+	float:left;
+}
+
+.DQCPanelControlOwnedBy
+{
+	width:100px;
+	padding-right: 5px;
+	float:left;
+}
+
+.DQCPanelControlQuality
+{
+	width:80px;
+	padding-right: 5px;
+	float:left;
+}
+
+
+.DQCPanelControlAccuracy
+{
+	width:80px;
+	padding-right: 5px;
+	float:left;
+}
+
+.DQCPanelControlAppropriateness
+{
+	width:130px;
+	padding-right: 5px;
+	float:left;
+}
+
+.DQCPanelControlCompleteness
+{
+	width:80px;
+	padding-right: 5px;
+	float:left;
+}
+
+
+

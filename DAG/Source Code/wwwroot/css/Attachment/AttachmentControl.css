@@ -1,0 +1,439 @@
+﻿/* Main Panel */
+    .AttachmentControl 
+    {
+	    font-family: Arial;
+	    font-size: 10pt;
+	    
+    }
+    
+    .alignLeft 
+    {
+    	float: left;
+		clear: left;
+    }
+    
+    .alignRight
+    {
+    	float: right;
+		clear: right;
+    }
+    
+    .AttachmentControl .form-panel, .AttachmentControl .error-summary
+    {
+    	margin-top: 0;
+    }
+
+/* Header Section - Before repeater */
+    .AttachmentControl .Header 
+    {
+	    height: 24px;	
+	    margin-bottom: 5px;
+	    width: 100%;
+	    clear: both;
+    }
+    
+    .AttachmentControl .HeaderText 
+    {
+    	width: 200px;
+    	height: 22px;
+    	padding-top: 2px;
+    	font-size: 12pt;
+    	font-style: italic;
+		font-weight: bold;
+		font-family: Gill Sans / Gill Sans MT, Helvetica, 'Trebuchet MS', Arial, sans-serif;
+		float: left;		
+    }
+
+/* Upload new button */
+    .AttachmentControl .UploadButton 
+    {
+	    float: right;
+	    background-image: url(../../img/PwCIcons/20x20/upload_icon.png);	    
+	    background-position: 2px center;
+	    background-repeat: no-repeat;
+	    padding-left: 24px;
+    }
+
+/* Repeater Container */
+    .AttachmentControl .Rows 
+    {
+	    border: 1px solid #6470b1;
+	    border-top: 4px solid #6470b1;
+	    padding: 0 3px 0px 0px;
+	    padding-right:0px;
+	    height: 100%;
+    }
+
+/* Empty data template */
+    .AttachmentControl .EmptyDataTemplate
+    {
+        padding:7px;           
+    }
+
+/* Repeater header */
+    .AttachmentControl .itemheader
+    {
+	    clear: right; 
+	    margin-left: 0px;
+	    margin-right: 0px;
+	    height: 13px;	
+	    padding-top:4px;
+	    padding-bottom:4px;
+	    font-weight:bold;
+	    font-size:10px;
+        color:#a32020;
+        background-color: #6470b1;
+    }
+
+    .AttachmentControl .atmHeader
+    {
+        float: left;
+	    text-align: left;
+	    width:140px;
+	    font-size:11px;
+	    padding-right:4px;
+	    display:inline-block;
+	     
+    }
+
+    .AttachmentControl .atmHeader.col1
+    {
+        width:265px; padding-left:40px;     
+    }
+
+    .AttachmentControl .atmHeader.col2
+    {
+        width:325px;
+    } 
+
+    .AttachmentControl .atmHeader.col3
+    {
+        width:70px;
+    }
+
+    .AttachmentControl .atmHeader.col4
+    {
+        width:80px;
+    }
+
+    .AttachmentControl .atmHeader.col5
+    {
+        width:80px;
+    }
+
+    .AttachmentControl .atmHeader.col6
+    {
+        width:80px;
+    }
+    .AttachmentControl .atmHeader.col7
+    {
+        width:80px;
+    }
+
+/* Repeater row container */
+    .AttachmentControl .Item 
+    {
+	    clear: both;	
+	    padding: 4px;
+	    padding-top:4px;
+	    padding-bottom:4px;
+    	
+	    height:100%;
+	    
+	    margin-top: 3px;
+	    overflow:hidden;
+    }
+
+
+    .AttachmentControl .Item.row0
+    {
+        background-color: #f6e9e9;
+    }
+
+    .AttachmentControl .Item.row1
+    {
+        background-color: #ffffff;
+    }
+
+    .AttachmentControl .Item:hover
+    {
+	    background-color: #e8c7c7;
+    }
+
+/* Item history */
+    .AttachmentControl .expandButton
+    {
+        
+    }
+
+    .AttachmentControl .Expand 
+    {
+	    margin-top: 13px;
+	    width: 24px;
+	    height: 24px;
+	    background-color: #a32020;
+	    background-image: url(../../img/PwCIcons/20x20/plus_icon20.png);
+	    background-repeat: no-repeat;
+	    background-position: center center;
+    }
+
+    .AttachmentControl .Expand.off
+    {
+        background-image: url(../../img/PwCIcons/20x20/minus_icon20.png);
+    }
+    
+    .AttachmentControl .Expand:hover 
+    {
+	    cursor: pointer;
+    }
+
+    .AttachmentControl .HistoryItem 
+    {
+	    clear: both;	
+	    padding: 2px;
+	    height: 21px;
+	    margin-left: 16px;
+	    border-bottom: 1px solid #e5e2db;
+    }
+
+    .AttachmentControl .HistoryContent 
+    {
+	    margin-top: 5px;
+    }
+
+/* Icon */
+    .AttachmentControl .ThumbnailPopup 
+    {
+	    width: 75px;
+	    height: 75px;
+	    background-color: #e5e2db;
+	    border: 3px solid #fff;
+	    z-index: 100; 
+	    padding: 5px;	
+	    text-align: center;
+    }
+
+    .AttachmentControl .ThumbnailPopup .PopupArrow 
+    {
+	    position: absolute;
+	    top: 34px;
+	    left: -19px;
+	    border: 0;
+	    width: 16px;
+	    height: 16px;
+	    background-color: Transparent;
+    }
+
+    .AttachmentControl .ThumbnailPopup img
+    {
+	    border: 1px solid #968c6d;
+	    width: 73px;
+	    height: 73px;
+	    background-color: #fff;	
+    }
+
+    .AttachmentControl .Icon 
+    {
+	    margin-top: 2px;
+    }
+
+    .AttachmentControl .Icon:hover {
+	    position: relative;
+    }
+
+    .AttachmentControl .Icon .ThumbnailPopup {
+	    display: none;
+    }
+
+    .AttachmentControl .Icon:hover .ThumbnailPopup {
+	    display: block;
+   	    position: absolute; 
+   	    top: -28px; left: 50px;
+    }
+
+/* Repeater row left section */
+    .AttachmentControl .itemblockleft
+    {
+        float: left;
+	    text-align: left;
+	    width:770px;
+	    font-size:11px;	    
+    }
+
+/* Item cells */
+    .AttachmentControl .atmItem
+    {
+        float:left;
+        padding-right:4px;
+        display:inline-block;
+        font-size:10pt;
+        height:auto;
+		overflow:hidden;	
+    }
+    
+    .AttachmentControl .atmItem a
+    {
+       display:inline-block;              
+    }
+    
+    .AttachmentControl .atmItem.col1
+    {
+        width:265px; padding-left:10px;
+    }
+
+    .AttachmentControl .atmItem.col2
+    {
+        width:325px;
+    }
+    
+    .AttachmentControl .atmItem.col3
+    {
+        width:70px;
+    }
+
+    .AttachmentControl .atmItem.col4
+    {
+        width:80px;
+    }
+    
+    .AttachmentControl .atmItem.col5
+    {
+        width:80px;
+    }
+
+    .AttachmentControl .atmItem.col6
+    {
+        width:80px;
+    }
+    .AttachmentControl .atmItem.col7
+    {
+        width:80px;
+    }
+/* Repeater row right section */
+    .AttachmentControl .ItemRow .itemblockright
+    {
+        float: right;
+	    text-align: right;
+	    width:90px;
+	    font-size:11px;
+    }
+
+/* Icon Buttons generic class */
+    .AttachmentControl .CmdButton 
+    {
+	    background-image: url(../../img/PwCIcons/20x20/bin_icon_small.png);
+	    background-position: center center;
+	    background-repeat: no-repeat;
+	    width: 20px;
+	    height: 20px;
+	    display: block;
+	    float: right;
+	    margin-left: 5px;
+    }
+
+/* Delete button */
+    .AttachmentControl .DeleteBtn
+    {
+	    background-image: url(../../img/PwCIcons/20x20/cross_icon20.png);
+	    
+    }
+
+/* Edit mode 1 button */
+    .AttachmentControl .UploadBtn
+    {
+	    background-image: url(../../img/PwCIcons/20x20/edit_icon20.png);
+	    background-color:#a32020;
+    }
+
+/* Mark as final button */
+    .AttachmentControl .MarkFinal
+    {
+	    background-image: url(../../img/PwCIcons/24x24/validate_icon24.png);
+	    background-color:#62AD11;
+    }
+
+
+/* Popup */
+
+    /* Background */
+        .AttachmentControl .modalback
+        {
+            filter: alpha(opacity=70);
+            opacity: 0.7;
+            background-color: #939598;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            display: none;
+            z-index: 10000;
+        }
+
+    /* Outer and Inner windows */
+
+        .AttachmentControl .pnNewAttachment
+        {
+            display:none;   
+            background-color:White;
+            width:740px;
+            border: 3px solid #404041;
+        }
+        
+        .AttachmentControl .modalPop
+        {
+            display: none;
+            border: solid 1px #e7e7e8;
+        }
+
+        .AttachmentControl .InnerPopup
+        {
+            background-color: #fff; 
+            padding: 7px;
+            height: auto;
+            overflow:hidden;
+            border: 1px solid #404041;
+        }
+
+        
+
+    /* Close button */
+        .AttachmentControl .CloseBtn
+        {
+	        float:left;
+        }
+
+        .AttachmentControl .CloseBtnClient
+        {
+	        float: left;
+        }
+    
+    /* Save button */
+        .AttachmentControl .SaveBtn
+        {
+	        float: right;
+        }
+        
+    /* Uploader panel */
+        .AttachmentControl .uploadButtonContainer
+        {
+            float:right;   
+        }
+
+        .AttachmentControl .UploaderPanel
+        {
+            padding-left: 188px; 
+            margin-bottom: 10px;
+        }
+
+    /* Popup header */
+        .AttachmentControl .InnerHeader
+        {
+             height:22px;
+             padding-left:5px;
+             font-size:12pt;
+             color:White;
+             font-family: Wingdings Regular;
+             font-weight:bold;             
+             background-color:#404041;                 
+        }

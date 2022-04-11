@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataDirectory_WW2" Class="CardDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=10.74.156.232;Initial Catalog=DataDirectory_WW2;User ID=WDCS_User" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DagDirectoryWWU" Provider="System.Data.SqlClient" />
+  <Table Name="" Member="Cards">
+    <Type Name="Card" Id="ID1">
+      <Column Name="CardHtml" Type="System.String" CanBeNull="true" />
+      <Column Name="CardRecordID" Type="System.Int32" CanBeNull="true" />
+      <Column Name="CardTemplateID" Type="System.Int32" CanBeNull="true" />
+      <Column Name="CardSectionID" Type="System.Int32" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.uspCardGet_FromCardData" Method="uspCardGet_FromCardData">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CardTemplateID" Parameter="cardTemplateID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CardSectionID" Parameter="cardSectionID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CardRecordID" Parameter="cardRecordID" Type="System.Int32" DbType="Int" />
+    <ElementType IdRef="ID1" />
+  </Function>
+  <Function Name="dbo.uspCardGetData" Method="uspCardGetData">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CardSectionID" Parameter="cardSectionID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CardRecordID" Parameter="cardRecordID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="uspCardGetDataResult">
+      <Column Name="CardDataID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CardSectionID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CardRecordID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ParamCode" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ValueInt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ValueDecimal" Type="System.Decimal" DbType="Decimal(38,10)" CanBeNull="true" />
+      <Column Name="ValueString" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ValueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ValueType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.uspCardSave" Method="uspCardSave">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CardSectionID" Parameter="cardSectionID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CardRecordID" Parameter="cardRecordID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ParamCode" Parameter="paramCode" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="ValueInt" Parameter="valueInt" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ValueDecimal" Parameter="valueDecimal" Type="System.Decimal" DbType="Decimal(38,10)" />
+    <Parameter Name="ValueString" Parameter="valueString" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="ValueDate" Parameter="valueDate" Type="System.DateTime" DbType="DateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

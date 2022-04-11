@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeBehind="PwCMaster.Master.cs"
+    Inherits="PwC.PwCMaster" %>
+
+<%@ Register Src="~/Common/Controls/ucTopNavigation.ascx" TagName="TopNavigation"
+    TagPrefix="uc2" %>
+<%@ Register TagPrefix="pwc" TagName="header" Src="~/Common/Controls/Header.ascx" %>
+<%@ Register TagPrefix="pwc" TagName="footer" Src="~/Common/Controls/Footer.ascx" %>
+<%@ Register TagPrefix="pwc" TagName="topNav" Src="~/Common/Controls/pwcTopNav.ascx" %>
+<%@ Register Src="~/Common/Controls/SessionTimeout.ascx" TagPrefix="st" TagName="SessionTimeout" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <!-- Mimic Internet Explorer 7 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    
+    <meta  http-equiv="Cache-control" content="no-cache" />
+    <meta  http-equiv="Cache-control" content="no-store" />
+    <meta  http-equiv="Cache-control" content="private" />
+    <meta  http-equiv="Cache-control" content="pre-check=0" />
+    <meta  http-equiv="Cache-control" content="post-check=0" />
+    <meta  http-equiv="Cache-control" content="must-revalidate" />
+    <meta  http-equiv="pragma" content="no-cache" />
+    
+    
+    <!-- Links to icon for browser bar, and tabs. Both links are needed so that the icon works in ie and ff -->
+    <link runat="server" rel="shortcut icon" href="~/favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="icon" href="~/favicon.ico" type="image/ico" />
+    <title>Data Assurance Guideline (DAG) Repository</title>
+    <link rel="stylesheet" runat="server" href="~/css/Red_Brand.css" type="text/css" />
+    <link rel="stylesheet" runat="server" href="~/css/StructurePanel/StructurePanel.css"
+        type="text/css" />
+    <link rel="stylesheet" runat="server" href="~/css/DQCPanel/DQCPanel.css" type="text/css" />
+    <link id="Link4" rel="stylesheet" runat="server" href="~/css/pwcTopNav/pwcTopNav_Brand.css"
+        type="text/css" />
+    <link id="Link5" rel="stylesheet" runat="server" href="~/css/PasswordStrength.css"
+        type="text/css" />
+    <link id="Link1" rel="stylesheet" runat="server" href="~/css/Project.css" type="text/css" />
+    <link href="css/Attachment/AttachmentControlFlex.css" rel="stylesheet" type="text/css" />
+    <link href="Common/Controls/StatusControl/StatusControl.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="Common/Controls/WorkflowControl/WStatusUpdate/WStatusUpdate.css" />
+    
+   
+    
+    <%--<link id="Link1" rel="stylesheet"  runat="server" href="~/css/screen.css" type="text/css" />
+    <link id="Link2" rel="stylesheet"  runat="server" href="~/css/chromestyle.css" type="text/css" />--%>
+    <!--[if lt IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/screen_ie6.css" />
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/screen_ie7.css" />
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+
+     <link rel="stylesheet" runat="server" href="css/wide.css" type="text/css" />
+
+</head>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data">
+    <asp:ScriptManager ID="smAjax" runat="server" EnablePageMethods="true" EnableHistory="false"
+        OnAsyncPostBackError="smAjax_OnAsyncPostBackError">
+        <Scripts>
+            <asp:ScriptReference Path="~/javascript/jquery-1.11.0.min.js" />
+            <%--<asp:ScriptReference Path="~/javascript/jquery.tools.min.js" />--%>
+            <asp:ScriptReference Path="~/javascript/jquery.pngFix.js" />
+            <asp:ScriptReference Path="~/javascript/querystring.js" />
+            <asp:ScriptReference Path="~/javascript/application.js" />
+            <asp:ScriptReference Path="~/javascript/functions.js" />
+            <asp:ScriptReference Path="~/javascript/pwc_chrome.js" />
+            <asp:ScriptReference Path="~/js/AttachmentControl.js?q=2" />            
+            <%-- /***********************************************
+                * Chrome CSS Drop Down Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+                * This notice MUST stay intact for legal use
+                * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+                ***********************************************/--%>
+        </Scripts>
+    </asp:ScriptManager>
+    <script type="text/javascript">
+        fixWatermarkControl();            
+    </script>
+    <div id="wrapper">
+        <div id="page">
+            <div class="headerWrapper2">
+                <pwc:Header ID="pageHeader" runat="server" />
+            </div>
+            <%--<pwc:topNav ID="pwcTopNav" runat="server"></pwc:topNav>--%>
+            <uc2:TopNavigation ID="TopNavigation1" runat="server" />
+            <st:SessionTimeout id="stControl" runat="server"></st:SessionTimeout>
+            <%--<div class="breadcrumb"> --%>
+            <%-- SideMapPath control which controls the breadcrumb trail --%>
+            <%--<asp:SiteMapPath ID="SiteMapPath1" runat="server"/>--%>
+            <%--</div>--%>
+            <div class="mainContent">
+                <asp:LinkButton ID="btnBackPage" Style="display: none" runat="server" Text="<< Back to previous page"
+                    CssClass="backLink" OnClick="btnBackPage_OnClick"></asp:LinkButton>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+            <pwc:Footer ID="pageFooter" runat="server" />
+        </div>
+    </div>
+    </form>
+</body>
+</html>

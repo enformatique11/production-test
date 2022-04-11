@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataDirectory_WW2" Class="WorkflowControlDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=10.74.156.232;Initial Catalog=DataDirectory_WW2;User ID=WDCS_User" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DagDirectoryWWU" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.uspWStatusWorkflow" Method="uspWStatusWorkflow">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="uspWStatusWorkflowResult">
+      <Column Name="FromValue" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="This_x" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="This_y" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="This_data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Next_x" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Next_y" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Design_data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="WorkflowID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FromValue1" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="ToValue" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Role" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StepText" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="StepType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StepOptions" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SectionValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SectionValue_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DefaultStage" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RA_From" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RA_To" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Design_data1" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="RowNum" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.uspWStatusUpdate" Method="uspWStatusUpdate">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ReferenceID" Parameter="referenceID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SectionValue" Parameter="sectionValue" Type="System.Int32" DbType="Int" />
+    <Parameter Name="WorkflowID" Parameter="workflowID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Comments" Parameter="comments" Type="System.String" DbType="NVarChar(1000)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.uspWStatusNext" Method="uspWStatusNext">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ReferenceID" Parameter="referenceID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SectionValue" Parameter="sectionValue" Type="System.Int32" DbType="Int" />
+    <ElementType Name="uspWStatusNextResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WorkflowID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FromValue" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="ToValue" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Role" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StepText" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="StepType" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="StepOptions" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SectionValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SectionValue_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RA_From" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RA_To" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReferenceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReferenceID_P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ActiveStage" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="StepDisclaimer" Type="System.String" DbType="NVarChar(1000) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.uspWStatusCurrent" Method="uspWStatusCurrent">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ReferenceID" Parameter="referenceID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SectionValue" Parameter="sectionValue" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StatusText" Parameter="statusText" Type="System.String" DbType="VarChar(MAX)" Direction="InOut" />
+    <Parameter Name="LastUpdatedBy" Parameter="lastUpdatedBy" Type="System.String" DbType="VarChar(200)" Direction="InOut" />
+    <Parameter Name="LastUpdatedWhen" Parameter="lastUpdatedWhen" Type="System.String" DbType="VarChar(50)" Direction="InOut" />
+    <ElementType Name="uspWStatusCurrentResult">
+      <Column Name="Value" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.uspWStatusLog" Method="uspWStatusLog">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ReferenceID" Parameter="referenceID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SectionValue" Parameter="sectionValue" Type="System.Int32" DbType="Int" />
+    <ElementType Name="uspWStatusLogResult">
+      <Column Name="StatusLogID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WorkflowID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WorkflowIDActiivated" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="WorkflowIDDeActiivated" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="FromValue" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="ToValue" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Role" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Comments" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="LastUpdatedByID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LastUpdatedByFullName" Type="System.String" DbType="NVarChar(201) NOT NULL" CanBeNull="false" />
+      <Column Name="LastUpdatedWhen" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StepType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StepOptions" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.uspWStatusPositionUpdate" Method="uspWStatusPositionUpdate">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FromValue" Parameter="fromValue" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="NewX" Parameter="newX" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NewY" Parameter="newY" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.uspWStatusEdit" Method="uspWStatusEdit">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StatusID" Parameter="statusID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="SectionValue" Parameter="sectionValue" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Value" Parameter="value" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="Text" Parameter="text" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="Design_x" Parameter="design_x" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Design_y" Parameter="design_y" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Design_data" Parameter="design_data" Type="System.String" DbType="VarChar(500)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.uspWStatusDiagram" Method="uspWStatusDiagram">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ReferenceID" Parameter="referenceID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="uspWStatusDiagramResult">
+      <Column Name="FromValue" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Design_x" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Design_y" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Design_data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(7) NOT NULL" CanBeNull="false" />
+      <Column Name="Seq" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

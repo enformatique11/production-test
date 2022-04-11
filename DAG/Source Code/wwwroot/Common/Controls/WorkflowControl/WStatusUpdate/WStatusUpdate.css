@@ -1,0 +1,20 @@
+﻿.SU.Current
+{
+    float:left;
+    font-weight:bold;
+    background-color:#ffAD10;
+    height:24px;
+    padding-left:4px;
+    padding-right:4px;
+}
+
+
+.SU.Current.R
+{
+    float:left;
+    font-weight:bold;
+    background-color:#E3001A;
+    height:24px;
+    padding-left:4px;
+    padding-right:4px;
+}

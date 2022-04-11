@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>DevExtreme Theme Builder</title>
+    <meta name="description" content="With DevExtreme Theme Builder, you can create a custom theme modifying visual styles of all widgets starting with any shipped theme such as Light, Dark, iOS, Android or Win8" />
+    <meta name="author" content="Developer Express Inc." />
+    <meta name="copyright" content="Copyright (c) 1998-2015 Developer Express Inc. All Rights Reserved." />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700" rel="stylesheet" type="text/css" />
+    <link href="Content/DevExtreme/css/dx.common.css" rel="stylesheet" />
+    <link href="Content/DevExtreme/css/dx.light.css" rel="stylesheet" id="theme-styles" />
+    <link href="Content/CSS/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="Content/favicon.ico" type="image/x-icon" />
+    <script type="text/html" id="toolbox-property">
+        <div class="property">
+            <label>
+                <span class="toolbox-property-name" data-bind="text: name.replace(/^\d+\.\s*/, '') + ':'"></span>
+                <div class="toolbox-editor" data-bind="toolboxEditor: { value: value, type: type, editAlphaChannel: true }"></div>
+            </label>
+        </div>
+    </script>
+</head>
+<body class="dx-theme-builder">
+
+    <div class="wrapper dx-theme-desktop-typography">
+        <div class="header">
+            <div class="header-box">
+                <h1><span>DEVEXTREME</span> THEME BUILDER</h1>
+            </div>
+            <div class="action-bar">
+                <div class="left-side">
+
+                    <div class="base-theming" data-bind="dxButton: { text: 'Base Theming', onClick: showBaseTheming }, css: { 'active': baseThemingVisible() }"></div>
+
+                    <div data-bind="dxButton: { text: 'Advanced Theming', onClick: showAdvancedTheming }, css: { 'active': advancedThemingVisible() }"></div>
+
+                    <div class="buttons-group put-right">
+                        <div class="left-button undo" data-bind="dxButton: { iconSrc: 'Content/Images/undo.png', onClick: undo, disabled: isUndoButtonDisabled }"></div>
+                        <div class="separator"></div>
+                        <div class="right-button redo" data-bind="dxButton: { iconSrc: 'Content/Images/redo.png', onClick: redo, disabled: isRedoButtonDisabled }"></div>
+                    </div>
+                </div>
+                <div class="right-side">
+
+                    <div class="put-left color-scheme-chooser">
+                        <div data-bind="dxButton: { text: currentThemeDisplayName, iconSrc: 'Content/Images/arrow-opened.png', onClick: showThemesMenu }"></div>
+                    </div>
+
+                    <div data-bind="dxContextMenu: {
+                                visible: themesMenuVisible,
+                                items: themes,
+                                selectionMode: 'single',
+                                selectedItem: selectedTheme,
+                                invokeOnlyFromCode: true,
+                                target: '.color-scheme-chooser',
+                                position: { my: 'top right', at: 'bottom right', of: '.color-scheme-chooser', offset: '0 -2' },
+                                onItemClick: updateThemeIdFromMenu,
+                                onShowing: function() {
+                                    $('.dx-menu-items-container').width($('.color-scheme-chooser').width());
+                                },
+                                onShown: function() { $('.color-scheme-chooser').addClass('pressed'); },
+                                onHidden: function() { $('.color-scheme-chooser').removeClass('pressed'); }
+                }"></div>
+
+                    <div class="put-right">
+
+                        <div class="buttons-group put-left">
+                            <div class="download-css-button left-button" data-bind="dxButton: { text: 'Save CSS', onClick: saveCSS }"></div>
+                            <div class="separator"></div>
+                            <div class="get-css-button right-button" data-bind="dxButton: { text: 'Copy CSS', onClick: copyCSS }"></div>
+                        </div>
+
+                        <div class="buttons-group put-left import-export-group">
+                            <div class="left-button" data-bind="dxButton: { text: 'Import', onClick: showMetadataPopup }"></div>
+                            <div class="separator"></div>
+                            <div class="right-button" data-bind="dxButton: { text: 'Export', onClick: exportMetadata }"></div>
+                        </div>
+                        <div data-bind="dxButton: { text: 'Reset', onClick: setDefault }"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="toolbox">
+                <!-- ko if: baseThemingVisible() -->
+                <div class="base-theming-panel">
+                    <div class="base-theming-box">
+                        <div class="base-theming-icon main-theme-color"></div>
+                        <div class="base-theming-box-content">
+                            <h2>Main Theme Color</h2>
+                            <p>Select a base color to be used across all the widget elements within the theme.</p>
+                        </div>
+                        <!-- ko if: isMobileTheme() -->
+                        <div data-bind="dxColorView: {
+                                    value: hue,
+                                    onValueChanged: _applyCustomHue
+                            }" class="mobile-base-theming-colorview"></div>
+
+                        <div class="colorview-buttons">
+                            <div data-bind="dxButton: { text: 'Apply', onClick: applyMobileMainThemeColor }"></div>
+                            <div data-bind="dxButton: { text: 'Cancel', onClick: cancelMobileMainThemeColor }"></div>
+                        </div>
+
+                        <!-- /ko -->
+                        <!-- ko ifnot: isMobileTheme() -->
+                        <div data-bind="dxColorBox: {
+                                    value: hue,
+                                    onValueChanged: _applyCustomHue,
+                                    applyButtonText: 'Apply',
+                                    placeholder: 'Select main theme color'
+                            }"></div>
+                        <!-- /ko -->
+                    </div>
+
+                    <!-- ko if: currentTheme() === 'generic' -->
+                    <div class="base-theming-box">
+                        <div class="base-theming-icon accent-color"></div>
+                        <div class="base-theming-box-content">
+                            <h2>Accent Color</h2>
+                            <p>Select a color for highlighting widget elements that are currently selected or hovered over.</p>
+                        </div>
+                        <div data-bind="dxColorBox: {
+                            value: highlightColor,
+                            onValueChanged: _applyHighlightColor,
+                            applyButtonText: 'Apply'
+                        }"></div>
+
+                    </div>
+
+                    <!-- ko if: treeIsUpdated -->
+                    <!--  ko if: getTreeItemDataByKey('@GENERIC_SELECTED_STATE_TEXT_COLOR') -->
+                    <div class="base-theming-box">
+                        <div class="base-theming-icon selected-state-color"></div>
+                        <div class="base-theming-box-content">
+                            <h2>Selected State Text Color</h2>
+                            <p>Set a color for the text that is displayed on the highlighted elements.</p>
+                        </div>
+                        <div data-bind="dxColorBox: {
+                                    value: getTreeItemDataByKey('@GENERIC_SELECTED_STATE_TEXT_COLOR').value,
+                                    applyButtonText: 'Apply'
+                                }"></div>
+                    </div>
+                    <!-- /ko -->
+                    <!-- /ko -->
+                    <!-- /ko -->
+                </div>
+                <!-- /ko -->
+                <!-- ko if: advancedThemingVisible() -->
+                <div class="widgets">
+                    <ul data-bind="foreach: tree" class="navigation-tree">
+                        <li data-bind="css: { 'opened': opened, 'has-children': children.length, 'has-active-child': hasActiveChild }">
+                            <span data-bind="text: title, click: click"></span>
+                            <!-- ko if: children.length -->
+                            <ul data-bind="foreach: children, visible: opened">
+                                <li data-bind="css: { 'active': active }">
+                                    <span data-bind="text: title, click: click"></span>
+                                </li>
+                            </ul>
+                            <!-- /ko -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="propertybox">
+                    <div data-bind="foreach: tree">
+                        <!-- ko if: data && key === $root.currentWidgetGroup() -->
+                        <div class="properties-box">
+                            <div class="editors-wrapper">
+                                <div data-bind="template: { name: 'toolbox-property', foreach: data.sort($root.sortToolboxEditors) }"></div>
+                            </div>
+                        </div>
+                        <!-- /ko -->
+                        <!-- ko if: children.length -->
+                        <div data-bind="foreach: children">
+                            <!-- ko if: key === $root.currentWidgetGroup() -->
+                            <div class="properties-box">
+                                <div class="editors-wrapper">
+                                    <div data-bind="template: { name: 'toolbox-property', foreach: data.sort($root.sortToolboxEditors) }"></div>
+                                </div>
+                            </div>
+                            <!-- /ko -->
+                        </div>
+                        <!-- /ko -->
+                    </div>
+                </div>
+                <!-- /ko -->
+            </div>
+
+            <div class="preview" data-bind="css: { 'is-mobile': isMobileTheme() }">
+                <div class="preview-panel">
+                    <iframe id="preview-panel-iframe" frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div data-bind="dxPopup: { visible: CSSPopupVisible, title: 'Copy CSS', height: 500, showCloseButton: false }">
+            <div data-bind="dxTextArea: { value: CSSContent, height: 350 }"></div>
+            <div data-bind="dxButton: { text: 'Close', onClick: closeCSSPopup }" class="additional-popup-button"></div>
+        </div>
+
+        <div data-bind="dxPopup: { visible: metadataPopupVisible, title: (showApplyButton() ? 'Import' : 'Export') + ' Theme Builder Metadata',height: 500, showCloseButton: false }">
+            <div data-bind="dxTextArea: { value: exportedMetadataAsString, height: 350 }"></div>
+            <div data-bind="dxButton: { text: 'Apply', onClick: importMetadata, visible: showApplyButton }" class="additional-popup-button"></div>
+            <div data-bind="dxButton: { text: 'Close', onClick: closeMetadataPopup }" class="additional-popup-button"></div>
+        </div>
+
+    </div>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="Content/DevExtreme/js/jquery-1.11.3.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script src="Content/DevExtreme/js/jquery-2.1.4.min.js"></script>
+    <!--<![endif]-->
+    <script src="Content/DevExtreme/js/knockout-3.3.0.js"></script>
+    <script src="Content/DevExtreme/js/globalize.min.js"></script>
+    <script src="Content/DevExtreme/js/dx.all.js"></script>
+
+    <script src="Content/Scripts/beautify-css.js"></script>
+    <script src="Content/Scripts/ko.toolboxEditor.js"></script>
+    <script src="Content/Scripts/themeBuilder.js"></script>
+    <script src="Content/Scripts/utils.js"></script>
+    <script src="Content/Data/JS/dx-theme-builder-metadata.js"></script>
+    <script src="Content/Scripts/metadataLoader.js"></script>
+    <script src="Content/Scripts/metadataRepository.js"></script>
+    <script src="Content/Scripts/customThemeCreator.js"></script>
+    <script src="Content/Scripts/navigationTree.js"></script>
+    <script src="Content/Scripts/groupsAliasesRepository.js"></script>
+    <script src="Content/Scripts/navigationTreeManager.js"></script>
+    <script src="Content/Scripts/historyChangesManager.js"></script>
+    <script src="Content/Scripts/previewIframeNotifier.js"></script>
+    <script src="Content/Scripts/themeBuilderViewModel.js"></script>
+    <script src="Content/Scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿ /*Widescreen*/
+
+
+        #wrapper {
+            width: 1302px;
+        }
+
+        .headerWrapper2 {
+            width: 1302px;
+            background-repeat: no-repeat;
+            background-image:  url( ../img/Brand/Scene960_3.jpg) ;
+        }
+
+        .pItemLbl_large
+        {
+            width: 300px !important;
+        }
+      
+        .filterPanel {
+            width: 1262px !important;
+        }
+
+        .filterPanel .fHeader {
+            width: 1262px !important;
+        }
+
+        .gridpan {
+            width: 1262px;
+        }
+
+        .topnav {
+            width: 1302px;
+        }
+
+        #header {
+            width: 1302px;
+        }
+
+        .loginHeaderSubTitle {
+            width: 1322px;
+        }
+
+        .formPanel {
+            width: 1262px;
+        }
+
+        .divmultiple {
+            width: 1245px;
+        }
+
+        .divsingleleft {
+            width: 620px;
+        }
+        .divsingleright {
+            width: 620px;
+        }
+
+        .MPFINANCIAL{width:620px;}
+        .MPWORKLOAD{width:620px;}
+
+        .rapanel{width: 620px;}
+
+
+        .activityDropdown {
+        width:304px;
+        }
+
+        .fullWidthBlock{width:1262px !important;}

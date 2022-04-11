@@ -1,0 +1,424 @@
+
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        id="svg0"
+                        height="540px"
+                        width="4000px">
+
+                        <style type="text/css">
+                            g.filter6 {
+                                cursor: pointer;
+                            }
+
+                                g.filter6.a rect {
+                                    fill: rgb(200,200,200);
+                                    stroke: #ffffff;
+                                    stroke-width: 1px;
+                                }
+
+                                g.filter6.a.selected rect {
+                                    fill: rgb(0,194,200);
+                                }
+
+                                g.filter6.a.done rect {
+                                    fill: rgb(57,89,99);
+                                }
+
+                                g.filter6 p {
+                                    color: white;
+                                    fill: white;
+                                    text-align: center;
+                                    padding: 4px;
+                                }
+
+                                g.filter6 text tspan {
+                                    fill: white;
+                                }
+
+                            line.link1 {
+                                stroke: #395963;
+                                stroke-width: 2;
+                                fill: #395963;
+                                marker-end: url(#triangle);
+                            }
+
+                            line.link2 {
+                                stroke: #395963;
+                                stroke-width: 2;
+                                fill: #395963;
+                                marker-end: url(#triangle2);
+                            }
+
+                            line.link3 {
+                                stroke: #FF3838;
+                                stroke-width: 2;
+                                fill: #FF3838;
+                                marker-end: url(#triangle3);
+                            }
+
+                            line.link4 {
+                                stroke: #FF3838;
+                                stroke-width: 2;
+                                fill: #FF3838;
+                            }
+
+                            .condition_text {
+                            }
+                        </style>
+
+
+                        <marker id="triangle" viewBox="-120 0 10 10" refX="0" refY="5" fill="#395963" stroke="#395963" markerWidth="6" markerHeight="6" orient="auto">
+                            <path d="M -120 0 L -110 5 L -120 10 z" />
+                        </marker>
+                        <marker id="triangle2" viewBox="-200 0 10 10" refX="0" refY="5" fill="#395963" stroke="#395963" markerWidth="6" markerHeight="6" orient="auto">
+                            <path d="M -200 0 L -190 5 L -200 10 z" />
+                        </marker>
+                        <marker id="triangle3" viewBox="-120 0 10 10" refX="0" refY="5" fill="#FF3838" stroke="#FF3838" markerWidth="6" markerHeight="6" orient="auto">
+                            <path d="M -120 0 L -110 5 L -120 10 z" />
+                        </marker>
+
+                        <line transform="translate(60,35)" x1="20" y1="240" x2="320" y2="240" class="link1"></line>
+                        <line transform="translate(60,35)" x1="320" y1="240" x2="620" y2="240" class="link1"></line>
+                        <line transform="translate(60,35)" x1="620" y1="240" x2="920" y2="240" class="link1"></line>
+
+                        <line transform="translate(60,35)" x1="920" y1="240" x2="1220" y2="140" class="link1"></line>
+                        <line transform="translate(60,35)" x1="920" y1="240" x2="1220" y2="340" class="link1"></line>
+                        <line transform="translate(60,35)" x1="1220" y1="140" x2="1520" y2="240" class="link1"></line>
+                        <line transform="translate(60,35)" x1="1220" y1="340" x2="1520" y2="240" class="link1"></line>
+
+                        <line transform="translate(60,35)" x1="1520" y1="240" x2="1820" y2="240" class="link1"></line>
+                        
+
+                        <line transform="translate(60,35)" x1="1820" y1="240" x2="2120" y2="140" class="link1"></line>
+                        <line transform="translate(60,35)" x1="1820" y1="240" x2="2120" y2="340" class="link1"></line>
+                        <line transform="translate(60,35)" x1="2120" y1="140" x2="2370" y2="240" class="link1"></line>
+                        <line transform="translate(60,35)" x1="2120" y1="340" x2="2370" y2="240" class="link1"></line>
+
+
+                        <line transform="translate(60,35)" x1="2370" y1="240" x2="2620" y2="140" class="link1"></line>
+                        <line transform="translate(60,35)" x1="2370" y1="240" x2="2620" y2="340" class="link1"></line>
+                        
+                        <line transform="translate(60,35)" x1="2920" y1="140" x2="3220" y2="240" class="link1"></line>
+                        <line transform="translate(60,35)" x1="2920" y1="340" x2="3220" y2="240" class="link1"></line>
+
+
+                        <line transform="translate(60,35)" x1="2670" y1="140" x2="2920" y2="140" class="link1"></line>
+                        <line transform="translate(60,35)" x1="2670" y1="340" x2="2920" y2="340" class="link1"></line>
+                        <line transform="translate(60,35)" x1="3220" y1="240" x2="3520" y2="240" class="link1"></line>
+                        <line transform="translate(60,35)" x1="3520" y1="240" x2="3820" y2="240" class="link1"></line>
+
+
+
+
+                       <%-- <!-- DAG Compliance Officer Send Backs -->
+                        <line transform="translate(60,35)" x1="2070" y1="50" x2="620" y2="50" class="link3" stroke-dasharray="10" stroke="#FF3838" fill="#FF3838"></line>
+                        <!-- Up from DAG Compliance Review -->
+                        <line transform="translate(60,35)" x1="2070" y1="200" x2="2070" y2="50" class="link3" stroke-dasharray="10" stroke="#FF3838" fill="#FF3838"></line>
+                        <!-- Down to Assurance Activities -->
+                        <line transform="translate(60,35)" x1="1820" y1="50" x2="1820" y2="140" class="link4" stroke-dasharray="10" stroke="#FF3838" fill="#FF3838"></line>
+                        <path d="M 1875 117 L 1885 117 L 1880 126 z" fill="#FF3838" stroke="#FF3838" />
+                        <!-- Down to Internal Audit Review -->
+                        <line transform="translate(60,35)" x1="1520" y1="50" x2="1520" y2="240" class="link3" stroke-dasharray="10" stroke="#FF3838" fill="#FF3838"></line>
+                        <!-- Down to Risk Assessment Completed -->
+                        <line transform="translate(60,35)" x1="920" y1="50" x2="920" y2="240" class="link3" stroke-dasharray="10" stroke="#FF3838" fill="#FF3838"></line>
+                        <!-- Down to Populated... -->
+                        <line transform="translate(60,35)" x1="620" y1="50" x2="620" y2="240" class="link3" stroke-dasharray="10" stroke="#FF3838" fill="#FF3838"></line>
+
+                        <!-- Exec Owner Send Backs -->
+                        <line transform="translate(60,35)" x1="2620" y1="450" x2="620" y2="450" class="link3" stroke-dasharray="10" stroke="#FF3838" fill="#FF3838"></line>
+                        <!-- Down to From Exec Owner -->
+                        <line transform="translate(60,35)" x1="2620" y1="240" x2="2620" y2="450" class="link3" stroke-dasharray="10" stroke="#FF3838" fill="#FF3838"></line>
+                        <!-- Up to Assurance Activities -->
+                        <line transform="translate(60,35)" x1="1820" y1="450" x2="1820" y2="350" class="link4" stroke-dasharray="10" stroke="#FF3838" fill="#FF3838"></line>
+                        <path d="M 1875 447 L 1885 447 L 1880 438 z" fill="#FF3838" stroke="#FF3838" />
+                        <!-- Up to Internal Audit Review -->
+                        <line transform="translate(60,35)" x1="1520" y1="450" x2="1520" y2="240" class="link3" stroke-dasharray="10" stroke="#FF3838" fill="#FF3838"></line>
+                        <!-- Up to DAG Compliance Review -->
+                        <line transform="translate(60,35)" x1="2070" y1="450" x2="2070" y2="240" class="link3" stroke-dasharray="10" stroke="#FF3838" fill="#FF3838"></line>
+                        <!-- Up to Risk Assessment Completed -->
+                        <line transform="translate(60,35)" x1="920" y1="450" x2="920" y2="240" class="link3" stroke-dasharray="10" stroke="#FF3838" fill="#FF3838"></line>
+                        <!-- Up to Populated... -->
+                        <line transform="translate(60,35)" x1="620" y1="450" x2="620" y2="240" class="link3" stroke-dasharray="10" stroke="#FF3838" fill="#FF3838"></line>--%>
+
+
+<%--                        <path d='M 1580,240 A 200,80 1 1 0 980,240' fill="none" stroke="#FF3838" stroke-dasharray="10" stroke-width="2" />
+
+                        <path d='M 1580,240 A 200,100 1 1 1 680,240' fill="none" stroke="#FF3838" stroke-dasharray="10" stroke-width="2" />--%>
+
+
+                        <!-- TRIANGLE -->
+                       <%-- <path d="M 1270 117 L 1280 111 L 1280 123 z" fill="#FF3838" stroke="#FF3838" />
+                        <path transform="translate(-160,347)" d="M 1270 117 L 1280 111 L 1280 123 z" fill="#FF3838" stroke="#FF3838" />--%>
+
+
+                        <!-- Conditions -->
+                        <text x="156" y="250" class="condition_text">DAG Compliance Officer</text>
+                        <text x="456" y="250" class="condition_text">DAG Compliance Officer</text>
+                        <text x="785" y="250" class="condition_text">Business Lead</text>
+                        <text transform="translate(1075, 225) rotate(-19)" class="condition_text">Business Lead</text>
+                        <text transform="translate(1075, 335) rotate(19)" class="condition_text">Business Lead</text>
+                        <text transform="translate(1385, 195) rotate(18)" class="condition_text">Automatic</text>
+                        <text transform="translate(1385, 360) rotate(-19)" class="condition_text">Automatic</text>
+
+                        <text transform="translate(1695, 250) " class="condition_text">IA Officer</text>
+                        <text transform="translate(1995, 225) rotate(-19)" class="condition_text">IA Officer</text>
+                        <text transform="translate(1995, 335) rotate(19)" class="condition_text">IA Officer</text>
+                        <text transform="translate(2285, 200) rotate(22)" class="condition_text">Automatic</text>
+                        <text transform="translate(2285, 360) rotate(-22)" class="condition_text">Automatic</text>
+
+                        <text transform="translate(2495, 225) rotate(-19)" class="condition_text">DAG Compliance Officer</text>
+                        <text transform="translate(2495, 335) rotate(19)" class="condition_text">DAG Compliance Officer</text>
+                        
+                        <text transform="translate(3085, 200) rotate(22)" class="condition_text">Automatic</text>
+                        <text transform="translate(3085, 360) rotate(-22)" class="condition_text">Automatic</text>
+
+
+                        <text x="2815" y="150" class="condition_text">Exec Owner</text>
+                        <text x="2815" y="400" class="condition_text">Exec Owner</text>
+                        <text x="3360" y="250" class="condition_text">Head of Internal Audit</text>
+                        <text x="3700" y="250" class="condition_text">Group Exec</text>
+
+                        <!-- Send back conditions -->
+                        <%--<text transform="translate(1500, 145) rotate(30)" class="condition_text" color="#FF3838">IA Officer</text>
+                        <text transform="translate(1500, 395) rotate(-35)" class="condition_text" color="#FF3838">IA Officer</text>
+                        <text transform="translate(1950, 75)" class="condition_text" color="#FF3838">DAG Compliance Officer</text>
+                        <text transform="translate(2625, 475) rotate(-35)" class="condition_text" color="#FF3838">Exec Owner</text>--%>
+
+
+                        <g statustext="FINAL STAGE" transform="translate(20,240)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">FINAL STAGE</tspan>
+
+                            </text>
+                        </g>
+
+                        <g statustext="Not started" transform="translate(20,240)" actualtext="Not started" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Not started</tspan>
+
+                            </text>
+                        </g>
+                        <g statustext="Populated with submission and owners" actualtext="Ready for risk assessment" transform="translate(620,240)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Populated with </tspan>
+                                <tspan x="5" y="40">submission and</tspan>
+                                <tspan x="5" y="55">owners</tspan>
+
+                            </text>
+
+                        </g>
+
+                        <g statustext="Methodology statement uploaded financial" actualtext="Methodology statement uploaded financial" transform="translate(1220,140)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Methodology</tspan>
+                                <tspan x="5" y="40">statement</tspan>
+                                <tspan x="5" y="55">uploaded financial</tspan>
+
+                            </text>
+
+                        </g>
+                        <g statustext="Methodology statement uploaded workload" actualtext="Methodology statement uploaded workload" transform="translate(1220,340)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Methodology</tspan>
+                                <tspan x="5" y="40">statement</tspan>
+                                <tspan x="5" y="55">uploaded workload</tspan>
+
+                            </text>
+
+                        </g>
+                        <g statustext="Ready for DAG Compliance Officer review" actualtext="Ready for DAG Compliance Officer review" transform="translate(2370,240)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Ready for </tspan>
+                                <tspan x="5" y="40">DAG Compliance</tspan>
+                                <tspan x="5" y="55">Officer review</tspan>
+
+                            </text>
+
+
+                        </g>
+                        <g statustext="Assurance activities determined financial" actualtext="Assurance activities determined financial" transform="translate(2120,140)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Assurance activities</tspan>
+                                <tspan x="5" y="40">determined </tspan>
+                                <tspan x="5" y="55">financial</tspan>
+
+                            </text>
+
+                        </g>
+                        <g statustext="Assurance activities determined workload" actualtext="Assurance activities determined workload" transform="translate(2120,340)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Assurance activities</tspan>
+                                <tspan x="5" y="40">determined </tspan>
+                                <tspan x="5" y="55">workload</tspan>
+
+                            </text>
+
+                        </g>
+                        <g statustext="Ready for Internal Audit Review" actualtext="Ready for Internal Audit review" transform="translate(1520,240)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Ready for Internal </tspan>
+                                <tspan x="5" y="40">Audit Review</tspan>
+
+                            </text>
+
+                        </g>
+
+                        <g statustext="Reviewed by Internal Audit" actualtext="Ready for assurance activities (financial); Ready for assurance activities (workload)" transform="translate(1820,240)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Reviewed by</tspan>
+                                <tspan x="5" y="40">Internal Audit</tspan>
+
+                            </text>
+
+                        </g>
+
+                        <g statustext="Risk assessment completed" actualtext="Ready for methodology statement (financial); Ready for methodology statement (workload)" transform="translate(920,240)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Risk assessment</tspan>
+                                <tspan x="5" y="40">completed</tspan>
+
+                            </text>
+
+
+                        </g>
+
+
+
+
+                        <g statustext="Ready for Exec Owner Sign-Off (Financial)" actualtext="Ready for exec owner sign-off (financial)" transform="translate(2620,140)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Ready for</tspan>
+                                <tspan x="5" y="40">Exec Owner Sign-Off</tspan>
+                                <tspan x="5" y="55">financial</tspan>
+
+                            </text>
+
+
+                        </g>
+
+
+                        <g statustext="Ready for Exec Owner Sign-Off (Workload)" actualtext="Ready for exec owner sign-off (workload)" transform="translate(2620,340)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Ready for</tspan>
+                                <tspan x="5" y="40">Exec Owner Sign-Off</tspan>
+                                <tspan x="5" y="55">workload</tspan>
+
+
+                            </text>
+
+
+                        </g>
+
+
+                         <g statustext="Signed Off by Exec Owner (Financial)" actualtext="Signed Off by Exec Owner (Financial)" transform="translate(2920,140)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Signed of by</tspan>
+                                <tspan x="5" y="40">Exec Owner</tspan>
+                                <tspan x="5" y="55">financial</tspan>
+
+                            </text>
+
+
+                        </g>
+
+
+                        <g statustext="Signed Off by Exec Owner (Workload)" actualtext="Signed Off by Exec Owner (Workload)" transform="translate(2920,340)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Signed of by</tspan>
+                                <tspan x="5" y="40">Exec Owner</tspan>
+                                <tspan x="5" y="55">workload</tspan>
+
+
+                            </text>
+
+
+                        </g>
+
+
+
+
+
+
+
+                        <g statustext="Saved as draft" actualtext="Saved as draft" transform="translate(320,240)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Saved as draft</tspan>
+
+                            </text>
+                        </g>
+                        <g statustext="Signed Off by Head of Internal Audit" actualtext="Ready for group exec sign-off" transform="translate(3520,240)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Signed Off by</tspan>
+                                <tspan x="5" y="40">Head of Internal</tspan>
+                                <tspan x="5" y="55">Audit</tspan>
+
+                            </text>
+                        </g>
+                        <g statustext="Ready for Head of Internal Audit review" actualtext="Ready for Head of Internal Audit sign-off" transform="translate(3220,240)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Ready for </tspan>
+                                <tspan x="5" y="40">Head of Internal</tspan>
+                                <tspan x="5" y="55">Sign-Off</tspan>
+
+                            </text>
+                        </g>
+                        <g statustext="Signed Off by Group Exec" actualtext="Final sign-off complete" transform="translate(3820,240)" baseclass="filter6 a" selected="true" class="filter6 a">
+                            <rect height="70" width="120" y="0" x="0"></rect>
+
+                            <text x="0" y="0">
+                                <tspan x="5" y="25">Signed Off by </tspan>
+                                <tspan x="5" y="40">Group Exec</tspan>
+
+                            </text>
+                        </g>
+
+
+
+                    </svg>

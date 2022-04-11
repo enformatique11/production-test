@@ -1,0 +1,2173 @@
+﻿/*
+	==========================================
+	PwC Master Stylesheet 1280/Red
+
+	Theme: Red
+	(Secondary colours: Orange, Tangerine, Grey)
+
+	Horizontal Resolution: 1280 pixels
+	==========================================
+*/
+
+/* General Page 
+----------------------------------------------------*/
+
+* { margin: 0px; padding: 0px; }
+ol, ul { padding-left: 20px }
+p { margin: 10px 0px 10px 0px }
+
+body
+{
+	background: #fff;					/* White */
+    font-family:  Tahoma, sans-serif;
+    font-size: 10pt;
+    color: #6d6e71;						/* 70% Black */
+    margin: 0;
+    padding: 0;
+    background-color: #D5E1E5;/*#f2f2f2;*/				/* Webpage background */
+}
+
+#wrapper
+{
+	width: 960px;	/* 1024 - 64 - 40 */
+	padding: 0 0px 20px 0px;
+    margin: 0px auto 0px auto;
+    background-color: #fff;
+}
+
+#loginWrapper
+{
+    width: 920px;	/* 1024 - 64 - 40 */
+	padding: 0 20px 20px 20px;
+    margin: 0px auto 0px auto;
+    background-color:#4B5C66;
+}
+
+#loginPage
+{
+    height: 100%;
+    background-color:#ffffff;
+}
+
+.headerWrapper
+{
+    width: 960px;	/* 1024 - 64 - 40 */
+margin: 0px auto 0px auto;
+background-image: url(../img/Brand/Scene960.jpg); 
+height: 244px;
+padding: 0 0px 20px 0px;
+    }
+
+
+.headerWrapper2
+{
+    width: 960px;	/* 1024 - 64 - 40 */
+margin: 0px auto 0px auto;
+background-image: url(../img/Brand/Scene960_2.jpg); 
+height: 244px;
+padding: 0 0px 20px 0px;
+    }
+    
+#page
+{
+	height: 100%;
+}
+
+.mainContent 
+{
+	text-align:left; 
+	padding: 0 20px 20px 20px;
+	min-height:335px;
+}
+
+.alignLeft
+{
+	float: left;
+	text-align: left;
+}
+
+.alignRight 
+{
+	float: right;
+	text-align: right;
+}
+
+p 
+{
+	font-family: Arial, Sans-Serif;
+}
+
+table, td
+{
+	margin: 0;
+	padding: 0;
+}
+
+.flowLayout 
+{
+	float: left;
+	margin: 15px 20px 0 0;
+}
+
+hr 
+{
+	color:#c7c8ca;						/* 25% Black */
+	height:1px;
+}
+
+ul li 
+{
+	list-style-type: square;
+	color: #6d6e71;	
+}
+
+ul
+{
+	list-style-type: square;
+	color: #e0301e;						/* Orange */
+}
+
+ul li span
+{
+	color: #6d6e71;						/* 70% Black */
+	font-family: Arial;
+}
+
+
+/* Controls
+----------------------------------------------------*/
+
+img 
+{
+	border:none;
+}
+
+.readonly 
+{
+	background-color: #e7e7e8;			/* 10% Black */
+	border: 1px solid #c7c8ca;			/* 25% Black */
+}
+
+.watermark 
+{
+	color:#c7c8ca;						/* 25% Black */
+}
+
+input 
+{
+    border: 1px solid #968c6d;			/* Grey */
+    vertical-align:bottom;
+	height: 19px;
+	font-family: Arial;
+	font-size: 9pt;
+	padding:1px;
+}
+
+textarea 
+{
+    border: 1px solid #968c6d;			/* Grey */
+    font-family: Arial;
+    font-size: 9pt;
+    padding:1px;
+}
+
+select 
+{
+    border: 1px solid #968c6d;			/* Grey */
+    z-index:-1;
+    font-family: Arial;
+    font-size: 9pt;
+}
+
+label
+{
+	font-family:Arial;
+	font-size:9pt;
+}
+
+input[type=checkbox]
+{
+	border:none;
+	margin-right:10px;
+	display:block;
+	float:left;
+}
+
+input[type=radio], input[type=radio] label
+{
+	float: left;
+	display: block;
+}
+
+input[type=button], input[type=submit]
+{
+    font-family:  Tahoma, sans-serif;
+    background-color:#e0301e;
+    border:none;
+    font-size:9pt;
+    font-weight:600;
+    color:White;
+    font-style:italic;
+    padding:2px;
+    margin:1px;
+    cursor: pointer;    
+}
+
+.smallInput 
+{
+	width: 60px;
+}
+
+.mediumInput 
+{
+	width: 140px;
+}
+
+.largeInput 
+{
+	width: 220px;
+}
+
+/* Icons/Buttons
+----------------------------------------------------*/
+
+input.plusIcon 
+{
+	background-image: url(../img/pwcicons/24x24/expand_plus.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 22px;
+	height:24px;
+}
+
+.iconCalendar
+{
+	position: relative;
+	top: -1px;
+	left: -4px;
+	width: 20px;
+	height: 20px;
+}
+
+input.iconButton 
+{
+	background-position: left center;
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 24px;
+	height: 24px;
+}
+
+input.iconButton.Save 
+{
+	background-image: url(../img/PwCIcons/24x24/save_icon.png);
+}
+
+input.iconButton.Cancel
+{
+	background-image: url(../img/PwCIcons/24x24/delete_icon24.png);
+}
+
+input.iconButton.Validate
+{
+	background-image: url(../img/PwCIcons/24x24/validate_icon24.png);
+}
+
+input.iconButton.Back
+{
+	background-image: url(../img/PwCIcons/24x24/arrow_left.png);
+}
+
+input.iconButton.Exit
+{
+	background-image: url(../img/PwCIcons/24x24/doublearrow_left.png);
+}
+
+input.iconButton.Tick
+{
+	background-image: url(../img/PwCIcons/24x24/tick.png);
+}
+
+input.iconButton.List
+{
+	background-image: url(../img/PwCIcons/24x24/list_icon24.png);
+}
+
+input.iconButton.List20
+{
+	height: 20px;
+	background-image: url(../img/PwCIcons/20x20/list_icon20.png);
+}
+
+input.iconButton.Search
+{
+	background-image: url(../img/PwCIcons/24x24/search_icon24.png);
+}
+
+
+input.icon20x20.List
+{
+	height: 20px;
+	background-image: url(../img/PwCIcons/20x20/list_icon20.png);
+}
+
+textarea 
+{
+    border: 1px solid #968c6d;			/* Grey */
+    font-family: Arial;
+    font-size: 9pt;
+}
+
+select 
+{
+    border: 1px solid #968c6d;			/* Grey */
+    z-index:-1;
+    font-family: Arial;
+    font-size: 9pt;
+}
+
+input[type=checkbox]
+{
+	border:none;
+	margin-right:10px;
+}
+
+.smallInput 
+{
+	width: 60px;
+}
+
+.mediumInput 
+{
+	width: 140px;
+}
+
+.largeInput 
+{
+	width: 220px;
+}
+
+
+/* Hyperlinks 
+----------------------------------------------------*/
+
+a, a:link
+{
+	color: #6d6e71;						/* 70% Black */
+}
+
+a:visited, a:active  
+{
+	color: #939598;						/* 50% Black */
+}
+
+a:hover 
+{
+	color: #e0301e;						/* Orange */
+}
+
+.lhspanel a, .lhspanel a:link, .lhspanel a:active, .lhspanel a:visited, .lhspanel a:hover 
+{
+	text-decoration: none;
+}
+
+
+/* Headings 
+----------------------------------------------------*/
+
+h1
+{
+    font-size: 18pt;
+    color:#2A4151;					/* Orange */
+    
+    width: 100%;
+    font-family: RobotoLight, Arial;
+    margin-bottom: 2px;
+}
+
+h2
+{
+    font-size: 12pt;
+    color: #000;						/* Black */
+    font-family: Tahoma;
+}
+
+h3
+{
+    font-size: 11pt;
+    font-style: italic;
+    color: #6d6e71;						/* 70% Black */
+    font-family: Tahoma;
+    margin-bottom: 3px;
+}
+
+h4
+{
+    font-size: 10pt;
+    font-weight: bold;
+    color: #6d6e71;						/* 70% Black */
+    font-family: Arial;
+}
+
+h5, h6
+{
+    font-size: 8pt;
+    color: #6d6e71;						/* 70% Black */
+    font-family: Arial;
+}
+
+
+/* Standard Tables 
+----------------------------------------------------*/
+
+table.stdTable
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #e0301e;			/* Orange */
+}
+
+table.stdTable th 
+{
+	background-color: #e0301e;			/* Orange */
+	color: #fff;						/* White */
+	padding: 2px 5px 2px 5px;
+	font-size: 9pt;
+	font-family: Tahoma;
+	border: 1px solid #e0301e;			/* Orange */
+}
+
+table.stdTable td 
+{
+	border: 1px solid #e0301e;			/* Orange */
+	padding: 2px 5px 2px 5px;
+	font-family: Arial;
+	font-size: 9pt;
+}
+
+table.stdTable tr 
+{
+	height: 20px;
+}
+
+table.showGrid th
+{
+	border: 1px solid #fff;				/* White */
+}
+
+table.superHeader 
+{
+	font-size: 9pt;
+	color: #e0301e;						/* Orange */
+}
+
+table.superHeader th  
+{
+	text-align: center;
+	background-color: #f7cbc7;			/* Orange */
+}
+
+
+/* Grid View Tables
+----------------------------------------------------*/
+
+table.gridview 
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	
+	width: 100%;
+}
+
+table.gridview th 
+{
+	color:#E08040;						/* White */
+	padding: 2px 5px 2px 5px;
+	font-size: 9pt;
+	font-family: Tahoma;
+	border-bottom: 1px solid #E08040;			/* Orange */
+}
+
+table.gridview th a:link, table.gridview th a:visited 
+{
+	color: #E08040;						/* White */
+	font-weight: bold;
+	text-decoration: none;
+}
+
+table.gridview th a:hover 
+{
+	text-decoration: underline;
+} 
+
+table.gridview td 
+{
+	border-bottom: 1px solid rgb(200,198,199);			/* Orange */
+	padding: 2px 5px 2px 5px;
+	font-family: Arial;
+	font-size: 9pt;
+	border-left: 0;
+	border-right: 0;
+	color: #000;						/* Black */
+}
+
+table.gridview tr 
+{
+	height: 24px;
+}
+
+table.gridview tr.row0
+{
+	background-color:#fff;			/* 10% Orange */
+}
+
+table.gridview tr.row1
+{
+	background-color: #fff;				/* White */
+}
+
+table.gridview tr.row0:hover
+{
+	background-color:#fff;			/* 25% Orange */
+}
+
+table.gridview tr.row1:hover
+{
+	background-color:#fff;			/* 25% Orange */
+}
+
+/* Gridview Pager
+----------------------------------------------------*/
+
+.pager 
+{ 
+	text-align: center; 
+	
+}
+
+.pager td 
+{
+	height: 19px;
+}
+
+.pager select 
+{ 
+	margin-left: 10px;
+}
+
+.pager table 
+{
+	border-collapse: collapse;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.pager table td
+{
+	border: 0;	
+	vertical-align: top;
+}
+
+.pager table td a 
+{
+	text-decoration: none;
+	background-color: #fff;
+}
+
+.pager table td a, .pager table td span
+{
+	display: block;
+	width: 22px;
+	height: 16px;
+	border: 1px solid #E08040;
+	padding-top: 1px;
+}
+
+.pager table td span 
+{
+	background-color: #E08040;
+	color: #fff;
+}
+
+.pager table a:hover
+{
+	background-color: #d7c8c7;
+}
+
+
+/* Header
+----------------------------------------------------*/
+
+#header
+{
+	height: 220px;
+	width: 960px;
+	clear: both;
+	padding: 0 0px 0 0px;
+}
+
+#pwcLogo img
+{
+	float: left;
+	width: 250px;
+	--height: 126px;
+	margin-top:20px;
+}
+
+.headerTitle
+{
+	float:right;
+	width: 450px;
+	height: 20px;
+	margin: 15px 4px 0 0;
+	text-align: right;
+	font-size: 16pt;
+	font-weight: bold;
+	color: #6d6e71;						/* Black */
+	display:none  ;
+}
+
+.headerSubTitle
+{
+	float:right;
+	width: 940px;
+	height: 20px;
+	margin: 10px 4px 0 0;
+	text-align: center;
+    font-size:18px;
+    color:#475963; 
+    font-family: Comfortaa, Arial;
+}
+
+.loginHeaderTitle
+{
+	float:right;
+	width: 450px;
+	height: 20px;
+	margin: 15px 4px 0 0;
+	text-align: right;
+	font-size: 16pt;
+	font-weight: bold;
+	color: #6d6e71;						/* Black */
+	display:none  ;
+}
+
+.loginHeaderSubTitle
+{
+	float:right;
+	width: 940px;
+	height: 18px;
+	margin: 10px 0px 0 0;
+	text-align: center;
+    font-size:18px;
+    color:#ffffff; 
+    font-family: Comfortaa, Arial;
+}
+
+#currentUser
+{
+	float: right;
+	width: 300px;
+	height: 24px;
+	font-size: 9pt;
+	clear: right;
+	text-align: right;
+	vertical-align: bottom;
+	margin: 16px 4px 0 0;
+	font-family: Arial;
+}
+
+
+/* Footer 
+----------------------------------------------------*/
+
+.footer 
+{
+	clear: both;
+	padding: 0px;
+	margin: 20px 10px 0px 10px;
+	font-family: Arial;
+}
+
+.footer span
+{
+	display: block;
+	border-top: 4px solid #939598;		/* 50% Black */
+	font-size:8pt;
+	margin: 0px;
+	padding: 8px 0px;
+}
+
+.footer a 
+{
+	font-size: 8pt;
+}
+
+.loginfooter 
+{
+	clear: both;
+	padding: 0px;
+	margin: 10px 10px 0px 10px;
+	font-family: Arial;
+	color:White;
+}
+
+.loginfooter span
+{
+	display: block;
+	border-top: 4px solid #ffffff;		/* 50% Black */
+	font-size:8pt;
+	margin: 0px;
+	padding: 8px 0px;
+	color:White;
+}
+
+.loginfooter a 
+{
+	font-size: 8pt;
+	color:White;
+}
+
+/* Tooltips
+----------------------------------------------------*/
+
+a span {
+	display: none;
+}
+
+a:hover span 
+{
+	display: block;
+	text-decoration: none;
+	color: #000;
+   	position: relative; top: 0px; left: 0;
+   	padding: 5px; margin: 10px; z-index: 10000;
+   	background: #FFFFCA; border: 1px solid #e5e2db;   	
+   	width: 400px;
+   	min-width: 120px;
+	max-width: 400px;
+	z-index:999999;
+}
+
+
+/* Main Navigation 
+----------------------------------------------------*/
+
+.topnav
+{
+	width: 960px;	
+	height: 22px;
+	margin-bottom: 10px;
+	clear: both;
+	font-size: 11pt;
+	background-color:#F07C0B;
+	-xwebkit-border-radius: 10px;
+    -xmoz-border-radius: 10px;
+    xborder-radius: 10px;
+	
+}
+
+.topnav ul
+{
+	width: 900px;
+	/*background-color: #fff;				/* White */
+	padding: 0px 2px;
+	margin: 0;
+	text-align: left;
+	height: 22px;
+	/*border-bottom:solid 1px #538488;*/
+}
+
+.topnav ul li
+{
+	display: block;
+	float: left;
+	margin: 0 6px 0 6px;
+	width: 182px;
+	height: 22px;	
+}
+
+.topnav ul li a
+{
+	display: block;
+	color: #fff;						/* 70% Black */
+	padding-top: 1px;
+	padding-bottom: 2px;
+	text-decoration: none;
+	 text-align:center;
+	height: 15px;
+	
+}
+
+.topnav ul li.item1 a:hover, .topnav ul li.item1 a.selected {	color: #fff;	}
+.topnav ul li.item2 a:hover, .topnav ul li.item2 a.selected {	color: #fff;	}
+.topnav ul li.item3 a:hover, .topnav ul li.item3 a.selected {	color: #fff;	}
+.topnav ul li.item4 a:hover, .topnav ul li.item4 a.selected {	color: #fff;	}
+.topnav ul li.item5 a:hover, .topnav ul li.item5 a.selected {	color: #fff;	}
+.topnav ul li.item6 a:hover, .topnav ul li.item6 a.selected {	color: #fff;	}
+.topnav ul li.item7 a:hover, .topnav ul li.item7 a.selected {	color: #fff;	}
+.topnav ul li.item8 a:hover, .topnav ul li.item8 a.selected {	color: #fff;	}
+
+.topnav .dropmenudiv
+{
+	position:absolute;
+	top: 0;
+	padding: 0 12px 3px 12px;
+	background-color: #F07C0B;				/* White */
+	font-size: 9pt;
+	z-index:100;
+	width: 172px;
+	visibility: hidden;
+	margin-top:3px;
+	border-top:solid 1px white;
+}
+
+.dropmenudiv .dropmenuinner 
+{
+	width: 182px;
+	padding-top: 3px;
+}
+
+
+.topnav .dropmenudiv a
+{
+	width: 172px;
+	height: 17px;
+	display: block;
+	float: left;
+	text-decoration: none;
+	color: white;						
+	font-size: 9pt;
+	padding: 3px 0 3px 0;
+}
+
+.topnav .dropmenudiv a:hover
+{ 
+	text-decoration:none;
+}
+
+
+
+* html .topnav .dropmenudiv a
+{ 
+	/*IE only hack*/
+	width: 100%;
+}
+
+
+
+
+/* Side Links Panel 
+----------------------------------------------------*/
+
+.linkspanel 
+{
+	width: 192px;
+	margin-right: 20px;	
+}
+
+
+
+/* Filter Panel
+----------------------------------------------------*/
+
+.filterPanel
+{
+    width: 920px;
+    margin-top: 10px;
+    background-color: #f5f4f0;			/* 10% Grey */
+}
+
+.filterPanel .fContent
+{
+	margin: 0px;
+    padding: 4px 0px 6px 10px;
+    float: none;
+    font-family: Arial;    
+}
+
+.filterPanel .fItem
+{
+    margin-right: 20px;
+    float:left;
+    font-size:9pt;
+    color:#6d6e71;						/* 70% Black */
+}
+
+.filterPanel .fItemCtl
+{
+    margin-right: 20px;
+    float:left;
+    font-size:9pt;
+    color:#6d6e71;						/* 70% Black */
+    font-weight:bold;
+    width: 178px;
+}
+
+.filterPanel .fItemLbl
+{
+    margin-right: 20px;
+    float:left;
+    font-size:9pt;
+    color:#6d6e71;						/* 70% Black */
+    width: 70px;
+}
+
+.filterPanel .filterRow
+{
+	clear: both;
+	margin-top:5px;
+	height: 22px;
+}
+
+.filterPanel .filterRowLarge
+{
+	clear: both;
+	margin-top:5px;
+	height: 37px;
+}
+
+.filterPanel .filterRowAuto
+{
+	clear: both;
+	padding-bottom: 16px;
+}
+
+.filterPanel .filterRowAuto .fItemLbl, .filterPanel .filterRowAuto .fItemCtl
+{
+	width: auto;
+}
+
+.filterPanel .filterRowAuto .fItemCtl 
+{
+	margin-right: 25px;
+}
+
+.filterPanel .fHeader
+{
+    font-weight: bold;
+    color:#000;							/* Black */
+    float:none;
+    width: 920px;
+    margin-bottom:3px;
+    font-size:9pt;
+	height: 22px;
+	background-color: #f5f4f0;			/* 25% Grey */
+	padding-top: 2px;
+}
+
+.filterPanel .fHeader input
+{
+	float: right;
+	margin: 0px 2px 0 0;
+}
+
+.filterPanel label
+{
+	display: block;
+}
+
+.filterTitle
+{
+	margin: 0px;
+	padding: 0px;
+	padding-left: 20px;
+	line-height: 20px;	
+	float: left;
+	display: block;
+	font-size:10pt;
+	font-weight:bold;
+	cursor: pointer;
+}
+
+.upIcon
+{
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	background-image: url(../img/uparrow2.GIF);
+}
+
+.downIcon
+{
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	background-image: url(../img/downarrow2.GIF);
+}
+
+.filterPanel label 
+{
+}
+
+
+/* Form Panel
+----------------------------------------------------*/
+
+.formPanel 
+{
+	width: 882px;
+	padding: 12px 0px 10px 18px;
+	margin: 10px 0 0 0;
+	background-color: #f5f4f0;			/* 10% Grey */
+	color: #6d6e71;						/* 70% Black */
+	font-family: Arial;
+	display:block;
+}
+
+.formPanelRow
+{
+	clear: both;
+	margin: 0 0 2px 0;
+	padding: 0;
+	height: 26px;
+}
+
+.formPanelRow_auto
+{
+	clear: both;
+	margin: 0 0 2px 0;
+	padding: 0;
+	height: auto;
+}
+
+.formPanelRow_x2
+{
+	clear: both;
+	margin: 0 0 2px 0;
+	padding: 0;
+	height: 54px;
+}
+
+.formPanelRow_x3
+{
+	clear: both;
+	margin: 0 0 2px 0;
+	padding: 0;
+	height: 82px;
+}
+
+.formPanel .pItemLbl 
+{
+	width: 80px;
+	margin-right: 16px;
+	float: left;
+	font-size: 9pt;
+}
+
+.formPanel .pItemLbl_large
+{
+	width: 180px;
+	margin-right: 16px;
+	float: left;
+	font-size: 9pt;
+}
+   
+.formPanel .pItemCtl
+{
+	width: 162px;
+	margin-right: 36px;
+	float: left;
+	font-size: 9pt;
+}
+
+.formPanel .pItemCtl_auto
+{
+	width: auto;
+	margin-right: 36px;
+	float: left;
+	font-size: 9pt;
+}
+
+.formPanel .pItemCtl_x2
+{
+	width: 492px;
+	margin-right: 36px;
+	float: left;
+	font-size: 9pt;
+}
+
+.formPanel .pItemCtl_x3
+{
+	width: 786px;
+	margin-right: 36px;
+	float: left;
+	font-size: 9pt;
+}
+
+.formPanelRow input
+{
+	height: 16px;
+}
+
+.formPanel .controls 
+{
+	width: 864px;
+	height: 19px;
+	margin-top: 10px;
+	clear: both;
+	text-align: left;
+	font-size: 9pt;
+}
+
+.formPanel .formPanelFooter 
+{
+	font-size: 9pt;
+	clear: both;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.formPanel .leftColumn
+{
+	float: left;
+}
+
+.formPanel .rightColumn
+{
+	float: right;
+}
+
+
+/* General Panel
+----------------------------------------------------*/
+
+.panel 
+{
+	width: 900px;
+	margin-top: 10px;
+}
+
+.panel .panelHeader 
+{
+	width: 900px;
+	height: 22px;
+	margin-bottom: 5px;
+}
+
+.panel .panelContent 
+{
+	clear: both;
+	width: 900px;
+}
+
+.panel .title 
+{
+	float: left;
+}
+
+.panel .toolbar 
+{
+	float: right;
+}
+
+
+/* Summary Panel
+----------------------------------------------------*/
+
+.summaryPanel 
+{
+    width: 892px;
+    padding: 2px 4px 2px 4px;
+    margin-top: 10px;    
+    font-size: 9pt;
+    color: #404041;						/* 90% Black */
+    height: 16px;
+    font-family: Arial;
+}
+
+.summaryPanel .summaryTitle 
+{
+	font-weight: bold;
+	margin-right: 25px;
+}
+
+.summaryPanel .summaryAltTitle 
+{
+	font-weight: bold;
+	/*font-style: italic;*/
+}
+
+.summaryPanel .alignLeft .summaryLabel 
+{
+	margin-right: 15px;
+}
+
+.summaryPanel .alignRight .summaryLabel 
+{
+	margin-left: 15px;
+}
+
+
+/* Main Content Panel
+----------------------------------------------------*/
+
+.contentPanel 
+{
+	width: 100%;
+}
+
+.contentPanel .title
+{
+	width: 100%;
+	border-bottom: 4px solid #e0301e;	/* Red */
+	color: #e0301e;						/* Red */
+	font-family: Tahoma;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.contentPanel img 
+{
+	float: right;
+}
+
+
+/* Feedback Panels
+----------------------------------------------------*/
+
+.SuccessMessage, .ErrorMessage
+{
+	width: 842px;
+	border: 1px solid;
+	margin: 10px 0px;
+	padding:10px 10px 10px 45px;
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+
+.SuccessMessage
+{
+	border-top: 3px solid #89e552;
+	border-bottom: 1px solid #89e552;
+	background-color: #CCFF99;	
+	font-size:12px;
+	color: #89d552;	
+	font-family:Arial;
+	padding-top:5px;
+	padding-left:20px;	
+	padding-bottom:5px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.ErrorMessage
+{
+	color: #D8000C;
+	background-color: #FFBABA;
+	background-image: url('../img/icons/error.jpg');
+}
+
+
+/* Attachment Viewer
+----------------------------------------------------*/
+
+.addAttachment 
+{
+	margin-top: 6px; 
+	float: right;
+	font-size: 9pt;
+}
+
+
+/* Validation Summary Panel
+----------------------------------------------------*/
+
+.errorSummary 
+{
+	border-top: 3px solid #e0301e;
+	border-bottom: 1px solid #e0301e;
+	background-color: #fceae9;	
+	font-size:12px;
+	color: #e0301e;	
+	font-family:Arial;
+	padding-top:5px;
+	padding-left:20px;
+	padding-bottom:5px;
+	margin-top:10px;
+	margin-bottom:10px;
+	
+}
+
+.errorSummary UL
+{
+	margin-top:10px;
+	list-style-type: square;
+	color: #e0301e;	
+	
+}
+
+.errorSummary li 
+{
+	color: #e0301e;	
+}
+
+/* Modal Popup
+----------------------------------------------------*/
+
+.modalBackground 
+{
+	background-color:#000;/*#939598;			/* 50% Black */
+	filter:alpha(opacity=65);
+	opacity:0.65;
+}
+
+.modalPopup 
+{
+	background-color:#fff;				/* White */
+	border-width:4px;
+	border-style:solid;
+	border-color:#968c6d;				/* Grey */
+	width:700px;
+	font-size:11px;
+	color:Black;						/* Black */
+	font-size: 9pt;
+	color: #6d6e71;						/* 70% Black */
+}
+
+.popupContent
+{
+	padding: 7px;
+}
+
+.popupHeader
+{
+	font-family: Tahoma; 
+	height:22px; 
+	padding-top:4px;
+	padding-left:5px;
+	font-weight:bold;
+	font-size:12pt;
+	background-color: #968c6d;			/* Grey */
+	color: #fff;						/* White */
+}
+
+
+/* General
+----------------------------------------------------*/
+
+div.fullWidthBlock 
+{
+	width: 100%;
+	clear: both;
+	margin: 10px 0px 10px 0px;
+}
+
+.ListEntityOwner
+{
+	display: block;
+	float: left;
+	width: auto;
+	height: 20px;
+	padding: 2px 2px 2px 6px;
+	margin: 5px 5px 5px 0px;
+	background-color: #f7cbc7;
+	color: #000;
+	border: 1px solid #e0301e;			
+	background-repeat: no-repeat;
+	text-decoration: none;
+	white-space:nowrap;
+	text-align:center;
+}
+
+.ListEntityDataAdmin
+{
+	display: block;
+	float: left;
+	width: auto;
+	height: 20px;
+	padding: 2px 2px 2px 6px;
+	margin: 5px 5px 5px 0px;
+	background-color: #f7cbc7;
+	color: #000;
+	border: 1px solid #e0301e;
+	background-repeat: no-repeat;
+	text-decoration: none;	
+	white-space:nowrap;
+	text-align:center;
+}
+
+.ListEntityDataAdmin:hover 
+{
+	color: #e0301e;					
+}
+
+.spacer 
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	height: 6px;
+}
+
+
+/* Quick Links
+----------------------------------------------------*/
+
+div.QuickLinks 
+{
+	width: 292px;
+	margin: 14px 0 14px 0;
+}
+
+div.QuickLinks div.QuickLink 
+{
+	width: 280px;
+	border-top: 3px solid #dc6900;
+	background-color: #e7e7e8;
+	color: #6d6e71;
+	margin: 6px 0 6px 0;
+	padding: 6px;
+	font-family: Arial;
+	cursor: pointer;
+}
+
+div.QuickLinks div.QuickLink:hover
+{
+	background-color: #fbf0e5;
+}
+
+div.QuickLinks div.QuickLink h1 
+{
+	color: #6d6e71;
+	font-size: 10pt;
+	font-weight: bold;
+	margin: 0 0 3px 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Static Quick Links (i.e. not database driven)
+----------------------------------------------------*/
+
+div.StaticQuickLinksStack
+{
+	width: 250px;
+}
+
+.StaticQuickLink
+{
+	padding:5px 10px 10px 10px;
+	border-top:4px solid;
+	background-color:#E5E2DB;
+	cursor: pointer;	
+	margin-bottom:8px;
+}
+
+div.StaticQuickLinksStack div.StaticQuickLink:hover
+{
+	background-color: #C7BFAC;
+}
+
+div.StaticQuickLinksStack div.StaticQuickLink h1
+{
+	font-family:Tahoma; 
+	font-size:16px; 
+	color:Black; 
+	font-weight:bold;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 6px;
+}
+
+div.StaticQuickLinksStack div.StaticQuickLink p
+{
+	font-family:Arial; 
+	font-size:12px; 
+	color:#666666; 
+	padding:0px; 
+	margin:0px;
+}
+
+/* SplashPageTiles 
+(i.e. tiles at the bottom of the page)
+----------------------------------------------------*/
+
+.SplashPageTile
+{
+	float:left; 
+	margin-right:15px;
+}
+
+.SplashPageTile h1
+{
+	font-size: 12pt;    
+    font-family: Tahoma;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom:6px;
+}
+
+.SplashPageTile .Details
+{	
+	border: 1px solid;
+	border-left-color: #CCC;
+	border-bottom-color: #CCC;
+	border-right-color: #CCC;
+	border-top:4px solid;
+}
+
+.SplashPageTileDetails
+{	
+	border: 1px solid;
+	border-left-color: #CCC;
+	border-bottom-color: #CCC;
+	border-right-color: #CCC;
+	border-top:4px solid;
+}
+
+.SplashPageTile .SplashPageTileDetails .Image
+{
+	margin-bottom:10px;
+}
+
+.SplashPageTile .SplashPageTileDetails a
+{	
+	font-size: 14px;
+	font-family:Arial;
+	font-weight:bold;
+	text-decoration: none;
+	color: #dc6900;
+}
+
+.SplashPageTile .SplashPageTileDetails a:hover 
+{
+	color: #dc6900;						/* Orange */
+	text-decoration: underline;
+}
+
+
+/* PwC Colors
+----------------------------------------------------*/
+
+.PwCRoseColor
+{
+	color:#db536a;
+}
+
+.PwCRedColor
+{
+	color:#e0301e;
+}
+
+.PwCOrangeColor
+{
+	color:#dc6900;
+}
+
+.PwCTangerineColor
+{
+	color:#eb8c00;
+}
+
+.PwCMaroonColor
+{
+	color:#602320;
+}
+.PwCBurgundyColor
+{
+	color:#a32020;
+}
+
+
+/* Top Border Colors
+----------------------------------------------------*/
+
+.PwCRoseTopBorder
+{
+	border-top-color:#db536a;
+}
+
+.PwCRedTopBorder
+{
+	border-top-color:#e0301e;
+}
+
+.PwCOrangeTopBorder
+{
+	border-top-color:#dc6900;
+}
+
+.PwCTangerineTopBorder
+{
+	border-top-color:#eb8c00;
+}
+
+.PwCMaroonTopBorder
+{
+	border-top-color:#602320;
+}
+.PwCBurgundyTopBorder
+{
+	border-top-color:#a32020;
+}
+
+
+
+/* Tree View 
+----------------------------------------------------*/
+
+.treeview 
+{
+	font-family: Arial;
+}
+
+.treeview .selectedNode 
+{
+	color: #e0301e;
+}
+
+
+/* Login Popup Image
+----------------------------------------------------*/
+
+.apple_overlay, .apple_overlay_high, .apple_overlay_high2
+{
+	font-family: Arial;
+}
+
+.apple_overlay h2, .apple_overlay_high h2, .apple_overlay_high2 h2
+{
+	display: block;
+	font-size: 20px;
+	padding: 0px;
+	margin-bottom: 20px;
+}
+
+.overlay_content
+{
+	width: 730px;
+}
+
+.apple_overlay_high2  {	
+    display:none;
+	background-image:url(../img/overlay/white2_high2.png);	
+	
+    /* 
+        width after the growing animation finishes
+        height is automatically calculated
+    */
+    width:730px;		
+	
+    /* some padding to layout nested elements nicely  */
+    padding:35px;
+}
+
+/* default close button positioned on upper right corner */
+.apple_overlay_high2 div.close {
+    background-image:url(../img/overlay/close.jpg);
+    position:absolute; right:40px; top:30px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}
+
+div.apple_overlay.black {
+    background-image:url(../img/overlay/transparent.png);		
+    color:#fff;
+}  
+
+/* Login Panel (Colours Only)
+----------------------------------------------------*/
+
+.LoginHeaderLeft
+{
+	vertical-align:middle;
+	line-height:30px;
+	width:170px; 
+	margin-right:15px; 
+	height:30px; 
+	float:left; 
+	font-size:14pt;
+	color:rgb(57,89,99);
+    font-family:Comfortaa, Arial;
+    padding:10px
+}
+
+
+
+.LoginHeaderMiddle
+{
+	vertical-align:middle;
+	line-height:30px;
+	width:475px; 
+	margin-right:15px; 
+	height:30px; 
+	float:left; 
+	font-size:14pt;
+	font-family:Comfortaa, Arial;
+    padding:10px 0px;
+}
+
+
+.LoginHeaderRight
+{
+	vertical-align:middle;
+	line-height:30px;
+	width:215px; 
+	height:30px; 
+	float:left;
+	font-family:Comfortaa, Arial;
+    padding:10px 0px;
+
+}
+
+.LoginPanelLeft
+{
+	width:250px; 
+	margin-right:15px; 
+	float:left; 
+	height:150px; 
+	font-size:9pt;
+}
+
+.LoginPanelMiddle
+{
+	width:470px; 
+	margin-right:20px; 
+	float:left; 
+	height:150px;
+}
+
+.LoginPanelRight
+{
+	width:215px; 
+	float:left; 
+	height:150px;
+}
+
+
+.specialHeading
+{
+    font-size: 11pt;
+    color: #e0301e;						/* Maroon */
+    font-weight: bold;
+    font-family: Tahoma;
+    margin-bottom: 2px;
+    float: left;
+    padding-top:10px;
+}
+
+
+/* Icon Divs 
+----------------------------------------------------*/
+
+.icon20x20
+{
+	width: 20px;
+	height: 20px;
+	background-color: #e0301e;
+}
+
+.icon20x20withBottomMargin
+{
+	width: 20px;
+	height: 20px;
+	margin-bottom:4px;
+	background-color: #e0301e;
+}
+
+.icon24x24
+{
+	width: 24px;
+	height: 24px;
+	background-color: #e0301e;
+}
+
+.PwCTangerine
+{
+	background-color: #eb8c00;	
+}
+
+.PwCOrange
+{
+	background-color: #e0301e;	
+}
+
+.PwCRed
+{
+	background-color: #e0301e;
+}
+
+.PwCRose
+{
+	background-color: #db536a;	
+}
+
+.PwCBurgundy
+{
+	background-color: #a32020;	
+}
+
+.PwCMaroon
+{
+	background-color: #602320;	
+}
+
+.PwCGrey
+{
+	background-color: #968c6d;	
+}
+
+.PwCGreen
+{
+	background-color: #4f8c13;
+}
+
+.PwCYellow
+{
+	background-color: #FEBE0D;
+}
+
+/* Check Box Lists
+----------------------------------------------------*/
+
+.checkBoxListHorizontal td
+{	
+	padding:0px 10px 3px 0px;
+	width: 200px;
+	vertical-align:top;
+}
+
+
+/* Check Box Lists
+----------------------------------------------------*/
+
+a.links 
+{
+	font-size:8pt;
+	text-decoration: none;
+}
+
+
+/* PwC Callout
+----------------------------------------------------*/
+
+.PwCCallout 
+{
+	width: 380px; 
+	color: #fff; 
+	position: absolute; 
+	top: -100px; 
+	left: 15px;		
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	opacity: 0;
+}
+
+.PwCCallout > div
+{
+	padding: 4px 16px 4px 16px;
+	background-color: #a32020;
+	margin: 0 0 7px 28px;
+}
+
+.PwCCallout.Burgundy 
+{
+	background-image: url(../img/CallOut/callout_burgundy.png);
+}
+
+.PwCCallout.Rose
+{
+	background-image: url(../img/CallOut/callout_rose.png);
+}
+
+.PwCCallout.Tangerine 
+{
+	background-image: url(../img/CallOut/callout_tangerine.png);
+}
+
+.PwCCallout.Orange
+{
+	background-image: url(../img/CallOut/callout_orange.png);
+}
+
+.PwCCallout.Red 
+{
+	background-image: url(../img/CallOut/callout_red.png);
+}
+
+.PwCCallout.Maroon
+{
+	background-image: url(../img/CallOut/callout_maroon.png);
+}
+
+.PwCCallout.Grey 
+{
+	background-image: url(../img/CallOut/callout_grey.png);
+}
+
+.PwCCallout.Burgundy > div
+{
+	background-color: #a32020;
+}
+
+.PwCCallout.Rose > div
+{
+	background-color: #db536a;
+}
+
+.PwCCallout.Tangerine > div
+{
+	background-color: #eb8c00;
+}
+
+.PwCCallout.Orange > div
+{
+	background-color: #e0301e;
+}
+
+.PwCCallout.Red > div
+{
+	background-color: #e0301e;
+}
+
+.PwCCallout.Maroon > div
+{
+	background-color: #602320;
+}
+
+.PwCCallout.Grey > div
+{
+	background-color: #968c6d;
+}
+
+.PwCCallout > div h1 
+{
+	color: #fff;
+	border: 0;
+	padding-top: 4px;
+	font-style: italic;
+	margin-bottom: 4px;
+	font-size:18pt;
+}
+
+.PwCCallout > div h2
+{
+	color: #fff;
+	font-weight: normal;
+	font-size:13pt;
+}
+
+
+/* Modal
+----------------------------------------------------*/
+
+.modal-fill 
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	filter: alpha(opacity=70);
+	opacity: 0.7; 
+	z-index: 10000;
+}
+
+.modal 
+{
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	margin-left: -200px;
+	border-width: 3px;
+	border-style: solid;
+	width: 400px;
+	font-size: 9pt;
+	z-index: 10001;
+}
+
+.modal-content 
+{
+	padding: 7px;
+	overflow: auto;
+	max-height: 600px;
+	border: 1px solid;
+}
+
+.modal-content p
+{
+	margin-top: 1px;
+}
+
+.modal-content .form-panel, .modal-content .error-summary
+{
+	margin: 0 0 7px 0;
+}
+
+.modal-title 
+{
+	font-family:  Sans-Serif; 
+	height: 22px; 
+	padding-top: 0px;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 12pt;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: #404041;	
+	color: #fff;
+}
+
+
+
+.modal
+{
+	background-color: #fff;
+}
+
+
+.modal-fill 
+{
+	background-color: #939598;
+}
+
+.modal
+{
+	color: #6d6e71;
+}
+
+.modal, .modal-content 
+{
+	border-color: #404041;
+}
+
+
+
+
+
+
+
+.LoginHeaderMiddle
+{
+	color:rgb(57,89,99)
+}
+
+.LoginHeaderRight
+{
+	color:rgb(57,89,99)
+}
+
+input[type=button], input[type=submit]{ background-color:rgb(57,89,99); font-style:normal; font-weight:bold;  }
+
+input[type=image]{ background-color:rgb(57,89,99); font-style:normal; font-weight:bold;}
+
+
+.primary-1.fg{color:rgb(57,89,99)}
+.primary-2.fg{color:rgb(255,118,10)}
+.secondary-1.fg{color:rgb(216,225,69)}
+.secondary-2.fg{color:rgb(119,38,97)}
+.secondary-3.fg{color:rgb(0,194,200)}
+
+.primary-1.bg{background-color:rgb(57,89,99)}
+.primary-2.bg{background-color:rgb(255,118,10)}
+.secondary-1.bg{background-color:rgb(216,225,69)}
+.secondary-2.bg{background-color:rgb(119,38,97)}
+.secondary-3.bg{background-color:rgb(0,194,200)}
+
+
+.BrandColor1.fg{  color:rgb(221,221,35); }
+.BrandColor2.fg{  color:#E08040; }
+.BrandColor3.fg{  color:rgb(99,114,122); }
+.BrandColor4.fg{  color:#538488; }
+
+.BrandColor1.bg{  background-color:rgb(221,221,35); }
+.BrandColor2.bg{  background-color:#E08040; }
+.BrandColor3.bg{  background-color:rgb(99,114,122); }
+.BrandColor4.bg{  background-color:#538488; }
+
+
+
+.StaticQuickLinkNew { margin-left:10px; width:420px; height:20px; padding:10px; font-weight:bold; cursor:pointer }
+.QLTop{border-radius:10px 10px 0px 0px}
+.QLMid{}
+.QLBot{border-radius:0px 0px 10px 10px}
+.formPanel{ background-color:White; padding-left:0px;}
+
+
+.notification1
+        {
+            background-repeat:no-repeat;
+            background-image:url('../img/PwCIcons/15x15/info_icon15.png');
+            background-position:5px 5px;
+             position:fixed;
+             right:10px; top:10px;
+             color:darkgreen;
+             padding:5px;
+             padding-left:20px;
+             border:solid 1px green;
+             background-color:#aaffaa;    
+        }
+        
+ .infopopup
+        {
+            position: relative; display:inline; margin-left:5px;
+        }
+        
+        .infopopup .infoiconO
+        {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 18px;
+            height: 18px;
+            display:block;
+            border-radius: 10px 10px 10px 10px;
+            background-color:rgb(0,194,200);
+            background-repeat:no-repeat;
+            background-position:1px 1px;
+            background-image:url(../img/PwCIcons/15x15/info_icon15.png);
+            cursor:help;
+        }
+       
+        .infopopup .infocontent
+        {
+            display: none;
+            background-color:rgb(0,194,200);
+            color:White;
+            border-radius: 10px 10px 10px 10px;
+            padding:10px;
+            font-family:Arial;
+            height:auto;
+            position: absolute;
+            right: 0px;
+            bottom: 20px;
+            background-image:url(../img/PwCIcons/20x20/delete_icon20.png);
+            background-repeat:no-repeat;
+            background-position:right top;
+            padding-top:20px;
+            width:150px;
+        }
+
+
+
+.dxgvHeader.dx-wrap{
+    background-color:white;
+}
+
+td.dx-wrap{
+    font-weight:bold;
+    color: #445C62;
+}
+
+.dxgvFilterRow td{background-color:white;}
+
+ .editButton { background-color: #ea5b0c !important;  }
+        .editButton .dxb{padding:0px !important;}
+
+        .dxbButton.editButton.dxbButtonSys.dxbTSys{
+            border-width: 0px;
+        }
+            
+        .dxbButton.editButton.dxbButtonSys.dxbTSys .dxb{
+            background-color: rgb(0,194,200) !important;
+        }
+
+
+  .valMessage1{
+      display:none; color:red; font-family:Arial; font-size:10px; padding:10px;
+  }

@@ -1,0 +1,656 @@
+﻿.contextmenurow
+{
+  clear: both;
+  width: 240px;
+  padding: 5px;
+  height: 20px;
+  border-bottom: solid 1px #777777;
+  cursor: pointer;
+}
+
+.contextmenurow:hover
+{
+  background-color: #d2d2d2;
+  border-bottom: solid 1px #777777;
+}
+
+.topnav
+{
+  display: none;
+}
+
+#headerTitle
+{
+  margin-top: 5px;
+}
+
+#pwcLogo img
+{
+  width: 61px;
+  height: 50px;
+}
+
+#currentUser
+{
+  display: none;
+}
+
+#header
+{
+  height: 50px;
+  width: 98%;
+}
+
+#wrapper
+{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+.footer
+{
+  display: none;
+}
+
+body
+{
+  background-color: White;
+}
+
+.controlpanel
+{
+  width: 900px;
+  height: 30px;
+  padding: 2px;
+  position: relative;
+  z-index: 999;
+}
+
+.canvaspanel.InLine
+{
+  position: relative;
+  width: 900px;
+  height: 400px;
+  overflow: auto;
+}
+
+.canvaspanel.Max
+{
+  position: absolute;
+  overflow: auto;
+  left: 10;
+  top: 10;
+}
+
+.optionpanel
+{
+  display: none;
+  width: 340px;
+  padding: 2px;
+  position: relative;
+  z-index: 999;
+  border: solid 1px #e2e2e2;
+}
+
+.definition
+{
+  float: left;
+  background-color: #d2d2d2;
+  padding: 5px;
+  width: 130px;
+  height: 50px;
+  position: relative;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  font-size: 9px;
+  color: black;
+  cursor: pointer;
+  border: solid 1px black;
+}
+
+.definition.cFILE
+{
+  background-color: #f6dabf;
+}
+
+.definition.cMODEL
+{
+  background-color: #f6dabf;
+}
+
+.definition.cPROCESS
+{
+  background-color: #f6dabf;
+}
+
+.definition.cSYSTEM
+{
+  background-color: #f6dabf;
+}
+
+.dataitem
+{
+  display: none;
+}
+
+.modal-fill
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  z-index: 10000;
+  background-color: #d2d2d2;
+}
+
+.closebutton
+{
+  background-image: url(../../img/PwCIcons/20x20/cross_icon20.png);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+.searchbutton
+{
+  background-image: url(../../img/PwCIcons/24x24/search_icon24.png);
+  width: 24px;
+  height: 24px;
+  background-color: #e0301e;
+  background-position: 0px 0px;
+}
+
+.buttonstartmapping
+{
+  background-image: url(../../img/PwCIcons/20x20/doublearrow_right.png);
+  width: 20px;
+  height: 20px;
+  background-color: #444444;
+}
+
+.datasourcediv
+{
+  float: left;
+  height: 40px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 3px;
+  width: 100px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.datasourcediv.Entity
+{
+    
+  background-color: #7ec7e9;
+  color: #000000;
+  border: solid 1px #005a81;
+  border-bottom: solid 10px #7e7e7e;
+}
+
+.datasourcediv 
+{
+  font-size:12px;
+  position: relative;
+  color: #ffffff;
+  border-width:0px;
+  font-family:Georgia;
+ 
+   width:140px;
+   height:57px;
+}
+
+.datasourcediv.n0{ background-color: rgb(235,140,0);}
+.datasourcediv.n1{ background-color: rgb(220,105,0);}
+.datasourcediv.n2{ background-color: rgb(224,48 ,30);}
+.datasourcediv.n3{ background-color: rgb(219,83 ,106);}
+.datasourcediv.n4{ background-color: rgb(163,32 ,32);}
+.datasourcediv.n5{ background-color: rgb(96 ,35 ,32);}
+.datasourcediv.n6{ background-color: rgb(150,140,109);}
+
+
+
+
+.dqcpanel1 table.dcqtable
+{
+  border-top: solid 1px #e0301e;
+  border-left: solid 1px #e0301e;
+  padding: 0px;
+  margin: 0px;
+}
+
+.dqcpanel1 table.dcqtable tr th
+{
+  border-bottom: solid 1px #e0301e;
+  border-right: solid 1px #e0301e;
+  background-color: #d2d2d2;
+  padding: 0px;
+  margin: 0px;
+}
+
+.dqcpanel1 table.dcqtable tr td
+{
+  border-bottom: solid 1px #e0301e;
+  border-right: solid 1px #e0301e;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: top;
+  background-color:White;
+}
+
+.dqcpanel1 table.dcqtable tr.ro td textarea
+{
+  border: none;
+  cursor: pointer;
+}
+
+.dqcpanel1 table.dcqtable tr.ro td select
+{
+  border: none;
+  cursor: pointer;
+}
+
+.dqcpanel1 table.dcqtable tr.selectedX td
+{
+  border-top: solid 1px red;
+  border-bottom: solid 1px red;
+  color: Red;
+}
+
+.dqcpanel1 table.dcqtable tr.selectedX td select, .dqcpanel1 table.dcqtable tr.selectedX td textarea
+{
+  color: Red;
+}
+
+.dqcpanel1 table.dcqtable tr.selectedX td:first-child
+{
+  border-left: solid 1px red;
+}
+
+.dqcpanel1 table.dcqtable tr.selectedX td:last-child
+{
+  border-right: solid 1px red;
+}
+
+.dcqtable tr:last-child .buttonstartmapping
+{
+  display: none;
+  float:left;
+}
+
+
+
+
+
+
+
+
+
+
+.dfcpanel1 table.dfctable
+{
+  border-top: solid 1px #e0301e;
+  border-left: solid 1px #e0301e;
+  padding: 0px;
+  margin: 0px;
+}
+
+.dfcpanel1 table.dfctable tr th
+{
+  border-bottom: solid 1px #e0301e;
+  border-right: solid 1px #e0301e;
+  background-color: #d2d2d2;
+  padding: 0px;
+  margin: 0px;
+}
+
+.dfcpanel1 table.dfctable tr td
+{
+  border-bottom: solid 1px #e0301e;
+  border-right: solid 1px #e0301e;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: top;
+  background-color:White;
+}
+
+.dfcpanel1 table.dfctable tr.ro td textarea
+{
+  border: none;
+  cursor: pointer;
+}
+
+.dfcpanel1 table.dfctable tr.ro td select
+{
+  border: none;
+  cursor: pointer;
+}
+
+.dfcpanel1 table.dfctable tr.selectedX td
+{
+  border-top: solid 1px red;
+  border-bottom: solid 1px red;
+  color: Red;
+}
+
+.dfcpanel1 table.dfctable tr.selectedX td select, .dfcpanel1 table.dfctable tr.selectedX td textarea
+{
+  color: Red;
+}
+
+.dfcpanel1 table.dfctable tr.selectedX td:first-child
+{
+  border-left: solid 1px red;
+}
+
+.dfcpanel1 table.dfctable tr.selectedX td:last-child
+{
+  border-right: solid 1px red;
+}
+
+.dfctable tr:last-child .buttonstartmapping
+{
+  display: none;
+  float:left;
+}
+
+
+
+
+
+
+#addesourcepopup 
+{
+    width: 100% !important;
+}
+
+#addesourcepopup .nodepanel2 
+{
+    width: calc(100% - 11px) !important;
+}
+
+.headerpanel 
+{
+    width: calc(100% - 40px) !important;
+}
+
+.canvaspanel 
+{
+    width: calc(100% - 20px) !important;
+    height: calc(100% - 90px) !important;
+}
+
+.contpanel 
+{
+    width: calc(100% - 2px) !important;
+    position: absolute; 
+    z-index: 99999;
+    border: solid 1px #e0301e; 
+    font-family: Arial;
+    height: 220px;
+    background-color:#f7cbc7
+}
+
+#header,
+.nodepanel
+{
+    width: calc(100% - 20px) !important;
+}
+
+.nodepanel 
+{
+   padding: 5px;
+}
+
+.nodepanel2
+{
+   overflow: auto; 
+   padding: 5px; 
+   height: 150px;
+}
+
+.searchbutton 
+{
+    display:inline-block;
+    cursor: pointer;
+}
+
+#ddlTypeFilter 
+{
+    height: 24px;
+    float: left;
+}
+
+#ctl00_MainContent_txtFilter
+{
+    height: 22px;
+    float: left;
+    padding: 0 3px;
+    margin: 0 3px;
+}
+
+.closebutton 
+{
+    cursor:pointer;
+}
+
+#saveDiagramPopup 
+{
+    width: 300px;
+    position: absolute;
+    bottom: 34px;
+    right: 1px;
+    background: #f7cbc7;
+    border: solid 1px #e0301e;
+    padding: 10px;
+    display: none;
+    z-index:99999;
+}
+
+#saveDiagramPopup h2 
+{
+    font-family: Arial;
+    margin-bottom: 10px;
+}
+
+#ctl00_MainContent_drpDiagramList 
+{
+    min-width: 100px;
+    float:right;
+    margin: 0 5px 0;
+}
+
+.saveLabel 
+{
+    min-width: 100px;
+    float:left;
+    color: #000;
+}
+
+.deleteEntity 
+{
+    background: #F83A3A;
+    width: 10px;
+    padding: 0px 5px;
+    height: 20px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 12px;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+}
+
+.deleteEntity:hover 
+{
+    color: #F83A3A;
+    background: #000;
+}
+
+#showOptions 
+{
+    width: 315px;
+    float: right;
+}
+
+.showChoice 
+{
+    float: left;
+    margin: 0 10px;
+}
+
+.showChoice input 
+{
+    margin-right: 5px;
+}
+
+.mainContent 
+{
+    min-height: 0;
+}
+
+#ctl00_MainContent_keyButton 
+{    
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    z-index: 9999;
+    width: 50px;
+}
+
+
+#ctl00_MainContent_keyButton:hover 
+{
+    background:#F78989;
+}
+
+#key 
+{
+    width: 100px;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    z-index: 9999;
+    display: none;
+}
+
+#key p 
+{
+    margin: 0;
+    padding: 3px;
+    color: White;
+}
+
+#key p:hover 
+{
+    opacity: 0.6;
+}
+
+
+
+
+.contextMain
+{
+ 
+    background-color:#C8DBD8;   
+    width:240px;
+    height:auto;
+}
+
+.contextHeader 
+{
+     height:20px; padding-top:10px; width:230px; font-weight:bold; 	 padding-left:10px;
+}
+
+
+.contextHeader .title, .contextRow .title
+{
+     float:left;   
+}
+
+.contextRow 
+{
+     height:24px; width:230px; 	 padding-left:10px; padding-top:3px;
+}
+
+.contextRow .quickedit 
+{
+     margin-left:10px;
+	 width:24px; height:24px; float:left;
+	 background-color:#602320;
+	 background-repeat:no-repeat;
+	 background-image: url('../../img/PwCIcons/24x24/list_icon24.png');
+	 cursor:pointer;
+}
+
+
+.contextRow .quickremove 
+{
+     margin-left:10px;
+	 width:24px; height:24px; float:left;
+	 background-color:#602320;
+	 background-repeat:no-repeat;
+	 background-image: url('../../img/PwCIcons/24x24/delete_icon24.png');
+	 cursor:pointer;
+}
+
+.contextRow .fullremove 
+{
+     margin-left:10px;
+	 width:24px; height:24px; float:left;
+	 background-color:#e0301e;
+	 background-repeat:no-repeat;
+	 background-image: url('../../img/PwCIcons/24x24/delete_icon24.png');
+	 cursor:pointer;
+}
+
+.contextRow .fulledit 
+{
+     margin-left:10px;
+	 width:24px; height:24px; float:left;
+	 background-color:#968c6d;
+	 background-repeat:no-repeat;
+	 background-image: url('../../img/PwCIcons/24x24/list_icon24.png');
+	 cursor:pointer;
+}
+
+.contextRow .quickadd 
+{
+     margin-left:10px;
+	 width:24px; height:24px; float:left;
+	 background-color:#339900;
+	 background-repeat:no-repeat;
+	 background-image: url('../../img/PwCIcons/20x20/plus_icon20.png');
+	 cursor:pointer;
+	 background-position: 2px 2px;
+}
+
+.contextRow .quickshow
+{
+     margin-left:10px;
+	 width:24px; height:24px; float:left;
+	 background-color:#602320;
+	 background-repeat:no-repeat;
+	 background-image: url('../../img/PwCIcons/24x24/validate_icon24.png');
+	 cursor:pointer;
+	 background-position: 2px 2px;
+}
+
+.contextRow:hover 
+{
+    background-color: #99B6B2;
+    cursor: pointer;
+}
+
+.contextRowBreak
+{
+     height:10px; margin-bottom:10px; border-bottom:1px solid black; width:200px; 	 padding-left:10px;
+}

@@ -1,0 +1,119 @@
+﻿/*
+    todo: find a better place
+*/
+.preview .desktop-layout .wrapper {
+    width: 400px;
+}
+
+.preview .desktop-layout .logo {
+    background-image: url(../Images/logo.png);
+}
+
+.dx-theme-ios7.dx-device-tablet .list-item-selected {
+    background: #ccf;
+}
+.dx-theme-android.dx-device-tablet .list-item-selected {
+    background: rgba(44,159,201,.8);
+}
+.dx-theme-win8 .list-item-selected {
+    background: #00c1ec;
+}
+
+html, 
+body {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: auto;
+}
+
+body.coloring-light {    
+    background-image: url(../Images/preview-background-light.png);
+}
+body.coloring-dark {    
+    background-image: url(../Images/preview-background-light.png);
+}
+
+html {
+    height: 100%;
+}
+
+.with-padding {
+    padding: 20px;
+}
+
+.preview.is-mobile {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.preview-container.overlays-common-group .dxbutton-box,
+.preview-container.overlays-toasts-group .dxbutton-box {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.dx-theme-generic-typography .base-common-group .widget-box-2.dxcalendar-box {
+    float: left;
+    width: 285px;
+}
+
+.dx-theme-generic-typography .base-common-group .widget-box-3.dxselectbox-box,
+.dx-theme-generic-typography .base-common-group .widget-box-4.dxselectbox-box,
+.dx-theme-generic-typography .base-common-group .widget-box-5.dxslider-box,
+.dx-theme-generic-typography .base-common-group .widget-box-6.dxlookup-box {
+    margin-left: 315px;
+}
+
+.base-common-group .widget-box-7.dxbutton-box,
+.base-common-group .widget-box-8.dxbutton-box {
+    float: right;
+}
+
+.base-common-group .widget-box-0.dxmenu-box,
+.base-common-group .widget-box-1.dxdatagrid-box {
+    margin-bottom: 30px;
+}
+
+.base-common-group .widget-box-3.dxselectbox-box {
+    margin-bottom: 10px;
+}
+
+.base-common-group .widget-box-4.dxselectbox-box,
+.base-common-group .widget-box-5.dxslider-box {
+    margin-bottom: 15px;
+}
+
+.base-common-group .widget-box-6.dxlookup-box {
+    margin-bottom: 36px;
+}
+
+.base-common-group .widget-box-8.dxbutton-box {
+    margin-right: 5px;
+}
+
+.badges-group .widget-box-0.dxlist-box {
+    margin-bottom: 20px;
+}
+
+.list-group .widget-box-0.dxlist-box {
+    height: 410px;
+}
+
+.base-typography-group .dx-fieldset {
+    margin: 30px 0;
+}
+
+.dx-theme-android5-typography .base-typography-group .dx-fieldset {
+    margin-top: 10px;
+}
+
+.icons-preview .dx-button-has-icon{
+    margin-right: 10px;
+}

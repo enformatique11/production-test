@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DGS_DAGWW" Class="LoginAuthenticationDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Function Name="dbo.uspCheckRememberMeCookieValue" Method="uspCheckRememberMeCookieValue">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CookieValue" Parameter="cookieValue" Type="System.String" DbType="NVarChar(500)" />
+    <ElementType Name="uspCheckRememberMeCookieValueResult">
+      <Column Name="Remembered" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.uspUserCreate_AuthToken" Method="uspUserCreate_AuthToken">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RecordUserID" Parameter="recordUserID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AuthCode" Parameter="authCode" Type="System.String" DbType="VarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.uspUserCheck_AuthToken" Method="uspUserCheck_AuthToken">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AuthCode" Parameter="authCode" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="IsValid" Parameter="isValid" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.uspUserCheck_AuthTokenRecent" Method="uspUserCheck_AuthTokenRecent">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="uspUserCheck_AuthTokenRecentResult">
+      <Column Name="AuthSuccessRecent" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.uspEmail_SendMultiFactorAuthenticationEmail" Method="uspEmail_SendMultiFactorAuthenticationEmail">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ProjectName" Parameter="projectName" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="MultiFactorCode" Parameter="multiFactorCode" Type="System.String" DbType="NVarChar(2000)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.uspSetRememberMeCookieValue" Method="uspSetRememberMeCookieValue">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CookieValue" Parameter="cookieValue" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="Expires" Parameter="expires" Type="System.DateTime" DbType="DateTime2" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

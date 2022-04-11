@@ -1,0 +1,135 @@
+﻿/****************************************
+Structure Panel Control 
+CSS file
+
+DO NOT MODIFY!
+****************************************/
+
+.StructurePanel 
+{        	
+	overflow: hidden;
+	margin: 10px 0 10px 0;
+}
+
+.StructurePanel .HeaderBar
+{
+	width: 100%;
+	height: 24px;
+	clear: both;
+}
+
+.StructurePanel .MainSections
+{
+	padding: 0 2px 0 0px;
+	margin-right: 24px;
+	float: left;
+	font-family: Georgia;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.StructurePanel .MainSections a:link, .StructurePanel .MainSections a:active, .StructurePanel .MainSections a:visited
+{
+	display: block;
+	float: left;
+	height: 18px;       
+	padding: 4px 8px 2px 8px; 	
+	margin: 0 4px 0 0px;
+	text-decoration: none;
+}
+
+.StructurePanel .MainSections a:hover
+{
+	color: #000;
+}
+
+.StructurePanel .MainSections a.Selected, .StructurePanel .MainSections a.Selected:hover
+{
+	color: #000;
+}
+
+.StructurePanel .MainSections span 
+{
+	display: block;
+	height: 18px;
+	padding: 4px 8px 2px 8px; 	
+	margin: 0 4px 0 0px;
+	color: #000;
+}
+
+.StructurePanel .ExpandButton
+{
+	float: right;
+	width: 24px;
+	height: 24px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.StructurePanel .ExpandButton.plus 
+{
+	background-image: url(../../img/expand_plus.png);
+}
+
+.StructurePanel .ExpandButton.minus
+{
+	background-image: url(../../img/expand_minus.png);
+}
+
+.StructurePanel .PanelContent
+{
+	overflow: hidden;
+	clear: both;
+	padding: 4px;
+}
+
+.StructurePanel .SectionColumn
+{
+	float: left;
+	margin: 4px 4px 0 4px;
+	padding-bottom: 6px;
+}
+
+.StructurePanel .SubSection:link, .StructurePanel .SubSection:active, .StructurePanel .SubSection:visited 
+{   
+	display: block;     
+	float: left;
+	height: 15px;
+	margin-bottom: 4px;
+	padding: 2px 4px 2px 4px;
+	font-family: Arial;
+	font-size: 9pt;
+	clear: both;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;     	
+}
+
+.StructurePanel .SubSection:hover, .StructurePanel .SubSection.Selected
+{
+	color: #fff;        	
+}
+
+.StructurePanel ul 
+{
+	margin: 0 6px 0 6px;
+	padding: 0;
+	list-style-type: square;
+	list-style-position: inside;
+	text-align: left;
+	clear: both;
+	line-height: 19px;
+}
+
+.StructurePanel .DocSection:link, .StructurePanel .DocSection:active, .StructurePanel .DocSection:visited 
+{
+	font-family: Arial;
+	font-size: 9pt;
+	text-decoration: none;
+}
+
+.StructurePanel .DocSection:hover, .StructurePanel .DocSection.Selected
+{        	
+}

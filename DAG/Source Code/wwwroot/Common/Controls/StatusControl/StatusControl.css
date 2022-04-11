@@ -1,0 +1,61 @@
+﻿.SC.Current
+{
+    float:left;
+    height:16px; 
+    font-weight:bold;
+    margin-left:3px;
+    color:#000000;
+} 
+
+
+
+.SC.Future{  background-color:#ffAD10;  height:24px; padding-left:4px; padding-right:4px;  }
+
+.SC.Future.Sendback{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.Sendbackfinancial{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.Sendbackworkload{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.Sendbackfinancialowner{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.Sendbackworkloadowner{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.Sendbacktofinanceowner{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoFinancialsecondreviewer{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.Sendbacktoworkloadowner{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoWorkloadsecondreviewer{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktobothFinancialandWorkloaddata2ndreviewers{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+
+.SC.Future.SendbacktoBusinessLeadMethodologyStatement{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoBusinessLeadRiskAssessment{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+
+.SC.Future.IsRej_Y{background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px; }
+.SC.Future.IsRej_Y2{background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px; }
+
+
+.SC.Future.SendbacktoBusinessLeadforMethodologyStatementupload {   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoBusinessLeadforRiskAssessmentupdate {   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+
+.SC.Future.SendbacktoBusinessLead{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoDAGComplianceOfficer{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoFDandWDLead{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoIAOfficerAssuranceActivities{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoIAOfficerReview{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+
+.SC.Future.SendbacktoInternalExpertFinancial{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoInternalDataAuditFinancial{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoInternalProcessAuditFinancial{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoExternalDataAuditFinancial{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoExternalProcessAuditFinancial{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoInternalExpertWorkload{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoInternalDataAuditWorkload{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoInternalProcessAuditWorkload{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoExternalDataAuditWorkload{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+.SC.Future.SendbacktoExternalProcessAuditWorkload{   background-color:#E3001A;height:24px; padding-left:4px; padding-right:4px;  } 
+
+
+.node > rect
+{
+    fill: #88FFFF
+}
+        
+.node > .node-not-selected
+{
+    fill: #FFFFFF
+}

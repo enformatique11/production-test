@@ -1,0 +1,998 @@
+﻿/*
+	==========================================
+	PwC Master Stylesheet 1280/Black
+
+	Theme: 70% Black
+	(Secondary colours: 50% Black, 90% Black, Grey)
+
+	Horizontal Resolution: 1280 pixels
+	==========================================
+*/
+
+
+/* General Page 
+----------------------------------------------------*/
+
+body
+{
+	background: #fff;					/* White */
+    font-family: Georgia, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: #6d6e71;						/* 70% Black */
+    margin: 0;
+    padding: 0;
+    background-color: #D5E1E5;/*#f2f2f2;*/			/* Webpage background */
+}
+
+#wrapper
+{
+	width: 1176px;	/* 1280 - 64 - 40 */
+	padding: 0 20px 20px 20px;
+    margin: 0px auto 0px auto;
+    background-color: #fff;
+}
+
+#page
+{
+	height: 100%;
+}
+
+.mainContent 
+{
+	text-align:left; 
+	padding: 0 10px 10px 10px;
+	min-height:335px;
+}
+
+.alignLeft
+{
+	float: left;
+	text-align: left;
+}
+
+.alignRight 
+{
+	float: right;
+	text-align: right;
+}
+
+p 
+{
+	font-family: Arial, Sans-Serif;
+}
+
+table, td
+{
+	margin: 0;
+	padding: 0;
+}
+
+.flowLayout 
+{
+	float: left;
+	margin: 15px 20px 0 0;
+}
+
+hr 
+{
+	color:#c7c8ca;						/* 25% Black */
+	height:1px;
+}
+
+ul li 
+{
+	list-style-type: square;
+	color: #6d6e71;						/* 70% Black */
+}
+
+ul li span
+{
+	color: #6d6e71;						/* 70% Black */
+}
+
+
+/* Controls
+----------------------------------------------------*/
+
+img 
+{
+	border:none;
+}
+
+.readonly 
+{
+	background-color: #e7e7e8;			/* 10% Black */
+	border: 1px solid #c7c8ca;			/* 25% Black */
+}
+
+.watermark 
+{
+	color:#c7c8ca;						/* 25% Black */
+}
+
+input 
+{
+    border: 1px solid #968c6d;			/* Grey */
+    vertical-align:bottom;
+	height: 19px;
+	font-family: Arial;
+	font-size: 9pt;
+}
+
+textarea 
+{
+    border: 1px solid #968c6d;			/* Grey */
+    font-family: Arial;
+    font-size: 9pt;
+}
+
+select 
+{
+    border: 1px solid #968c6d;			/* Grey */
+    z-index:-1;
+    font-family: Arial;
+    font-size: 9pt;
+}
+
+input[type=checkbox]
+{
+	border:none;
+	margin-right:10px;
+}
+
+.smallInput 
+{
+	width: 60px;
+}
+
+.mediumInput 
+{
+	width: 140px;
+}
+
+.largeInput 
+{
+	width: 220px;
+}
+
+
+/* Hyperlinks 
+----------------------------------------------------*/
+
+a, a:link
+{
+	color: #6d6e71;						/* 70% Black */
+}
+
+a:visited, a:active  
+{
+	color: #939598;						/* 50% Black */
+}
+
+a:hover 
+{
+	color: #6d6e71;						/* 70% Black */
+}
+
+.lhspanel a, .lhspanel a:link, .lhspanel a:active, .lhspanel a:visited, .lhspanel a:hover 
+{
+	text-decoration: none;
+}
+
+
+/* Headings 
+----------------------------------------------------*/
+
+h1
+{
+    font-size: 14pt;
+    color: #6d6e71;						/* 70% Black */
+    border-top: 4px solid #6d6e71;		/* 70% Black */
+    font-weight: bold;
+    width: 100%;
+    font-family: Georgia;
+    margin-bottom: 2px;
+}
+
+h2
+{
+    font-size: 12pt;
+    color: #000;						/* Black */
+    font-family: Georgia;
+}
+
+h3
+{
+    font-size: 11pt;
+    font-style: italic;
+    color: #6d6e71;						/* 70% Black */
+    font-family: Georgia;
+    margin-bottom: 3px;
+}
+
+h4
+{
+    font-size: 10pt;
+    font-weight: bold;
+    color: #6d6e71;						/* 70% Black */
+    font-family: Arial;
+}
+
+h5, h6
+{
+    font-size: 8pt;
+    color: #6d6e71;						/* 70% Black */
+    font-family: Arial;
+}
+
+
+/* Standard Tables 
+----------------------------------------------------*/
+
+table.stdTable
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #6d6e71;			/* 70% Black */
+}
+
+table.stdTable th 
+{
+	background-color: #6d6e71;			/* 70% Black */
+	color: #fff;						/* White */
+	padding: 2px 5px 2px 5px;
+	font-size: 9pt;
+	font-family: Georgia;
+	border: 1px solid #6d6e71;			/* 70% Black */
+}
+
+table.stdTable td 
+{
+	border: 1px solid #6d6e71;			/* 70% Black */
+	padding: 2px 5px 2px 5px;
+	font-family: Arial;
+	font-size: 9pt;
+}
+
+table.stdTable tr 
+{
+	height: 20px;
+}
+
+table.showGrid th
+{
+	border: 1px solid #fff;				/* White */
+}
+
+table.superHeader 
+{
+	font-size: 9pt;
+	color: #6d6e71;						/* 70% Black */
+}
+
+table.superHeader th  
+{
+	text-align: center;
+	background-color: #c7c8ca;			/* 70% Black */
+}
+
+
+/* Grid View Tables
+----------------------------------------------------*/
+
+table.gridview 
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #6d6e71;			/* 70% Black */
+	width: 100%;
+}
+
+table.gridview th 
+{
+	background-color: #6d6e71;			/* 70% Black */
+	color: #fff;						/* White */
+	padding: 2px 5px 2px 5px;
+	font-size: 9pt;
+	font-family: Georgia;
+	border: 1px solid #6d6e71;			/* 70% Black */
+}
+
+table.gridview th a:link, table.gridview th a:visited 
+{
+	color: #fff;						/* White */
+	font-weight: bold;
+	text-decoration: none;
+}
+
+table.gridview th a:hover 
+{
+	text-decoration: underline;
+} 
+
+table.gridview td 
+{
+	border: 1px solid #6d6e71;			/* 70% Black */
+	padding: 2px 5px 2px 5px;
+	font-family: Arial;
+	font-size: 9pt;
+	border-left: 0;
+	border-right: 0;
+	color: #000;						/* Black */
+}
+
+table.gridview tr 
+{
+	height: 24px;
+}
+
+table.gridview tr.row0
+{
+	background-color: #e7e7e8;			/* 10% 70% Black */
+}
+
+table.gridview tr.row1
+{
+	background-color: #fff;				/* White */
+}
+
+table.gridview tr.row0:hover
+{
+	background-color: #c7c8ca;			/* 25% 70% Black */
+}
+
+table.gridview tr.row1:hover
+{
+	background-color: #c7c8ca;			/* 25% 70% Black */
+}
+
+.pager 
+{ 
+	padding: 10px; 
+	text-align: center; 
+}
+
+.pager select 
+{ 
+	margin-left: 10px; 
+}
+
+
+/* Header
+----------------------------------------------------*/
+
+#header
+{
+	height: 105px;
+	width: 1156px;
+	clear: both;
+	padding: 0 10px 0 10px;
+}
+
+#pwcLogo img
+{
+	float: left;
+	width: 122px;
+	height: 100px;
+}
+
+#headerTitle
+{
+	float:right;
+	width: 500px;
+	height: 28px;
+	margin: 6px 4px 0 0;
+	text-align: right;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #000;						/* Black */
+}
+#headerSubTitle
+{
+	float:right;
+	width: 500px;
+	height: 25px;
+	margin: 6px 4px 0 0;
+	text-align: right;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #000;						/* Black */
+}
+#currentUser
+{
+	float: right;
+	width: 300px;
+	height: 24px;
+	font-size: 8pt;
+	clear: right;
+	text-align: right;
+	vertical-align: bottom;
+	margin: 40px 4px 0 0;
+}
+
+
+/* Footer 
+----------------------------------------------------*/
+
+#footer 
+{
+	margin: 0px;
+	padding: 0px;
+	margin: 10px 10px 0px 10px;
+}
+
+#footer span
+{
+	display: block;
+	border-top:2px solid #6d6e71;		/* 70% Black */
+	font-size:7.5pt;
+	margin: 0px;
+	padding: 8px 0px;
+}
+
+
+/* Main Navigation 
+----------------------------------------------------*/
+
+.topnav
+{
+	width: 1176px;	
+	height: 25px;
+	margin-bottom: 20px;
+	clear: both;
+	font-size: 9pt;
+}
+
+.topnav ul
+{
+	width: 1168px;
+	background-color: #fff;				/* White */
+	padding: 0 4px 0 4px;
+	margin: 0;
+	text-align: left;
+	height: 25px;
+}
+
+.topnav ul li
+{
+	display: block;
+	float: left;
+	margin: 0 6px 0 6px;
+	width: 182px;
+	height: 25px;	
+}
+
+.topnav ul li a
+{
+	border-top: 4px solid #6d6e71;		/* 70% Black */
+	display: block;
+	color: #6d6e71;						/* 70% Black */
+	padding-top: 2px;
+	text-decoration: none;
+	width: 182px;
+	height: 19px;
+}
+
+.topnav ul li.item1 a:hover, .topnav ul li.item1 a.selected {	border-top: 4px solid #eb8c00; color: #eb8c00;	}
+.topnav ul li.item2 a:hover, .topnav ul li.item2 a.selected {	border-top: 4px solid #dc6900; color: #dc6900;	}
+.topnav ul li.item3 a:hover, .topnav ul li.item3 a.selected {	border-top: 4px solid #e0301e; color: #e0301e;	}
+.topnav ul li.item4 a:hover, .topnav ul li.item4 a.selected {	border-top: 4px solid #db536a; color: #db536a;	}
+.topnav ul li.item5 a:hover, .topnav ul li.item5 a.selected {	border-top: 4px solid #a32020; color: #a32020;	}
+.topnav ul li.item6 a:hover, .topnav ul li.item6 a.selected {	border-top: 4px solid #602320; color: #602320;	}
+.topnav ul li.item7 a:hover, .topnav ul li.item7 a.selected {	border-top: 4px solid #968c6d; color: #968c6d;	}
+.topnav ul li.item8 a:hover, .topnav ul li.item8 a.selected {	border-top: 4px solid #eb8c00; color: #eb8c00;	}
+
+.topnav .dropmenudiv
+{
+	position:absolute;
+	top: 0;
+	padding: 0 12px 3px 12px;
+	background-color: #fff;				/* White */
+	font-size: 9pt;
+	z-index:100;
+	width: 182px;
+	visibility: hidden;
+}
+
+.dropmenudiv .dropmenuinner 
+{
+	width: 182px;
+	padding-top: 3px;
+}
+
+.topnav div.item1 {	border-top: 1px dotted #eb8c00;	}
+.topnav div.item2 {	border-top: 1px dotted #dc6900;	}
+.topnav div.item3 {	border-top: 1px dotted #e0301e;	}
+.topnav div.item4 {	border-top: 1px dotted #db536a;	}
+.topnav div.item5 {	border-top: 1px dotted #a32020;	}
+.topnav div.item6 {	border-top: 1px dotted #602320;	}
+.topnav div.item7 {	border-top: 1px dotted #968c6d;	}
+.topnav div.item8 {	border-top: 1px dotted #eb8c00;	}
+
+.topnav .dropmenudiv a
+{
+	width: 182px;
+	height: 17px;
+	display: block;
+	float: left;
+	text-decoration: none;
+	color: #6d6e71;						/* 70% Black */
+	font-size: 9pt;
+	padding: 3px 0 3px 0;
+}
+
+.topnav .dropmenudiv a:hover
+{ 
+	text-decoration:none;
+}
+
+.topnav div.item1 a:hover {	color: #eb8c00;	}
+.topnav div.item2 a:hover {	color: #dc6900;	}
+.topnav div.item3 a:hover {	color: #e0301e;	}
+.topnav div.item4 a:hover {	color: #db536a;	}
+.topnav div.item5 a:hover {	color: #a32020;	}
+.topnav div.item6 a:hover {	color: #602320;	}
+.topnav div.item7 a:hover {	color: #968c6d;	}
+.topnav div.item8 a:hover {	color: #eb8c00;	}
+
+* html .topnav .dropmenudiv a
+{ 
+	/*IE only hack*/
+	width: 100%;
+}
+
+.topnav .current a
+{
+	border-top: 4px solid #404041;		/* 90% Black */
+}
+
+
+/* Side Links Panel 
+----------------------------------------------------*/
+
+.linkspanel 
+{
+	width: 192px;
+	margin-right: 20px;	
+}
+
+
+
+/* Filter Panel
+----------------------------------------------------*/
+
+.filterPanel
+{
+    width: 1156px;
+    margin-top: 10px;
+    border-top: 4px solid #968c6d;		/* Grey */
+    background-color: #f5f4f0;			/* 10% Grey */
+}
+
+.filterPanel .fContent
+{
+	margin: 0px;
+    padding: 4px 10px 6px 10px;
+    float: none;
+    font-family: Arial;    
+}
+
+.filterPanel .fItem
+{
+    margin-right: 20px;
+    float:left;
+    font-size:9pt;
+    color:#6d6e71;						/* 70% Black */
+}
+
+.filterPanel .fItemCtl
+{
+    margin-right: 20px;
+    float:left;
+    font-size:9pt;
+    color:#6d6e71;						/* 70% Black */
+    font-weight:bold;
+    width: 250px;
+}
+
+.filterPanel .fItemLbl
+{
+    margin-right: 20px;
+    float:left;
+    font-size:9pt;
+    color:#6d6e71;						/* 70% Black */
+    width: 70px;
+}
+
+.filterPanel .filterRow
+{
+	clear: both;
+	margin-top:5px;
+	height: 22px;
+}
+
+.filterPanel .filterRowLarge
+{
+	clear: both;
+	margin-top:5px;
+	height: 37px;
+}
+
+.filterPanel .filterRowAuto
+{
+	clear: both;
+	padding-bottom: 16px;
+}
+
+.filterPanel .filterRowAuto .fItemLbl, .filterPanel .filterRowAuto .fItemCtl
+{
+	width: auto;
+}
+
+.filterPanel .filterRowAuto .fItemCtl 
+{
+	margin-right: 25px;
+}
+
+.filterPanel .fHeader
+{
+    font-weight: bold;
+    color:#000;							/* Black */
+    float:none;
+    width: 1156px;
+    margin-bottom:3px;
+    font-size:9pt;
+	height: 22px;
+	background-color: #e5e2db;			/* 25% Grey */
+	padding-top: 2px;
+}
+
+.filterPanel .fHeader input
+{
+	float: right;
+	margin: 0px 2px 0 0;
+}
+
+.filterPanel label
+{
+	display: block;
+}
+
+.filterTitle
+{
+	margin: 0px;
+	padding: 0px;
+	padding-left: 20px;
+	line-height: 20px;	
+	float: left;
+	display: block;
+	font-size:10pt;
+	font-weight:bold;
+	cursor: pointer;
+}
+
+.upIcon
+{
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	background-image: url(../img/uparrow2.GIF);
+}
+
+.downIcon
+{
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	background-image: url(../img/downarrow2.GIF);
+}
+
+.filterPanel label 
+{
+}
+
+
+/* Form Panel
+----------------------------------------------------*/
+
+.formPanel 
+{
+	width: 1138px;
+	padding: 12px 0px 10px 18px;
+	margin: 10px 0 0 0;
+	background-color: #f5f4f0;			/* 10% Grey */
+	color: #6d6e71;						/* 70% Black */
+	font-family: Arial;
+}
+
+.formPanelRow
+{
+	clear: both;
+	margin: 0 0 2px 0;
+	padding: 0;
+	height: 26px;
+}
+
+.formPanelRow_x2
+{
+	clear: both;
+	margin: 0 0 2px 0;
+	padding: 0;
+	height: 54px;
+}
+
+.formPanelRow_x3
+{
+	clear: both;
+	margin: 0 0 2px 0;
+	padding: 0;
+	height: 82px;
+}
+
+.formPanel .pItemLbl 
+{
+	width: 80px;
+	margin-right: 16px;
+	float: left;
+	font-size: 9pt;
+}
+   
+.formPanel .pItemCtl
+{
+	width: 245px;
+	margin-right: 36px;
+	float: left;
+	font-size: 9pt;
+}
+
+.formPanel .pItemCtl_x2
+{
+	width: 622px;
+	margin-right: 36px;
+	float: left;
+	font-size: 9pt;
+}
+
+.formPanel .pItemCtl_x3
+{
+	width: 999px;
+	margin-right: 36px;
+	float: left;
+	font-size: 9pt;
+}
+
+.formPanelRow input
+{
+	height: 16px;
+}
+
+.formPanel .controls 
+{
+	width: 1120px;
+	height: 19px;
+	margin-top: 10px;
+	clear: both;
+	text-align: right;
+	font-size: 9pt;
+}
+
+.formPanel .formPanelFooter 
+{
+	font-size: 9pt;
+	clear: both;
+	margin-top: 10px;
+}
+
+
+/* General Panel
+----------------------------------------------------*/
+
+.panel 
+{
+	width: 1156px;
+	margin-top: 10px;
+}
+
+.panel .panelHeader 
+{
+	width: 1156px;
+	height: 22px;
+	margin-bottom: 5px;
+}
+
+.panel .panelContent 
+{
+	clear: both;
+	width: 1156px;
+}
+
+.panel .title 
+{
+	float: left;
+}
+
+.panel .toolbar 
+{
+	float: right;
+}
+
+
+/* Summary Panel
+----------------------------------------------------*/
+
+.summaryPanel 
+{
+    width: 1148px;
+    padding: 2px 4px 2px 4px;
+    margin-top: 10px;    
+    font-size: 9pt;
+    color: #404041;						/* 90% Black */
+    height: 16px;
+    font-family: Arial;
+}
+
+.summaryPanel .summaryTitle 
+{
+	font-weight: bold;
+	margin-right: 25px;
+}
+
+.summaryPanel .summaryAltTitle 
+{
+	font-weight: bold;
+	/*font-style: italic;*/
+}
+
+.summaryPanel .alignLeft .summaryLabel 
+{
+	margin-right: 15px;
+}
+
+.summaryPanel .alignRight .summaryLabel 
+{
+	margin-left: 15px;
+}
+
+
+/* Main Content Panel
+----------------------------------------------------*/
+
+.contentPanel 
+{
+	width: 100%;
+}
+
+.contentPanel .title
+{
+	width: 100%;
+	border-bottom: 4px solid #939598;	/* 50% Black */
+	color: #939598;						/* 50% Black */
+	font-family: Georgia;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.contentPanel img 
+{
+	float: right;
+}
+
+
+/* Feedback Panels
+----------------------------------------------------*/
+
+.SuccessMessage, .ErrorMessage
+{
+	width: 1098px;
+	border: 1px solid;
+	margin: 10px 0px;
+	padding:10px 10px 10px 45px;
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+
+.SuccessMessage
+{
+	color: #4F8A10;
+	background-color: #DFF2BF;
+	background-image:url('../img/icons/success.jpg');
+}
+
+.ErrorMessage
+{
+	color: #D8000C;
+	background-color: #FFBABA;
+	background-image: url('../img/icons/error.jpg');
+}
+
+
+/* Attachment Viewer
+----------------------------------------------------*/
+
+.addAttachment 
+{
+	margin-top: 6px; 
+	float: right;
+	font-size: 9pt;
+}
+
+
+/* Validation Summary Panel
+----------------------------------------------------*/
+
+.errorSummary 
+{
+	border:1px solid #990000;
+	background-image: url('../img/error.gif');
+	background-position: 20px 10px;
+	background-repeat:no-repeat;
+	padding:10px;
+	font-size:12px;
+	text-indent:30px;
+	margin-bottom:10px;
+	font-weight:bold;
+	color:Red;
+}
+
+.errorSummary UL
+{
+	margin: 0;
+	padding:5px;
+	margin-left:15px;
+}
+
+.errorSummary li 
+{
+	color:#990000;
+	font-weight:normal;
+}
+
+
+/* Modal Popup
+----------------------------------------------------*/
+
+.modalBackground 
+{
+	background-color:#939598;			/* 50% Black */
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+.modalPopup 
+{
+	background-color:#fff;				/* White */
+	border-width:4px;
+	border-style:solid;
+	border-color:#968c6d;				/* Grey */
+	width:700px;
+	font-size:11px;
+	color:Black;						/* Black */
+	font-size: 9pt;
+	color: #6d6e71;						/* 70% Black */
+}
+
+.popupContent
+{
+	padding: 7px;
+}
+
+.popupHeader
+{
+	font-family: Georgia; 
+	height:22px; 
+	padding-top:4px;
+	padding-left:5px;
+	font-weight:bold;
+	font-size:12pt;
+	background-color: #968c6d;			/* Grey */
+	color: #fff;						/* White */
+}
+
+
+/* General
+----------------------------------------------------*/
+
+div.fullWidthBlock 
+{
+	width: 100%;
+	clear: both;
+	margin: 10px 0 10px 0;
+}
